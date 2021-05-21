@@ -56,6 +56,17 @@ Group.new('TSNamespace', colors.gray)
 Group.new('TSVariableBuiltin'      , colors.gray      )
 Group.new('TSConditional'      , colors.gray      )
 
+-- diff
+Color.new('diffGreen'      , '#255028')
+Color.new('diffRed'      , '#792421')
+Color.new('diffChange'      , '#705216')
+Color.new('diffText'      , '#c69026')
+
+Group.new('DiffAdd'      ,nil, colors.diffGreen)
+Group.new('DiffDelete'      ,nil, colors.diffRed)
+Group.new('DiffChange'      ,nil,  colors.diffChange)
+Group.new('DiffText'      ,colors.diffChange, colors.diffText)
+
 -- Ruby
 Group.new('rubyTSInclude', colors.purple)
 Group.new('rubyTSType', colors.orange)
