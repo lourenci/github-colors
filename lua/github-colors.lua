@@ -52,8 +52,14 @@ Group.new('TSSymbol', colors.cyan)
 Group.new('TSFloat', colors.blue)
 Group.new('TSLabel', colors.cyan)
 Group.new('TSField', colors.green)
+Group.new('TSNamespace', colors.gray)
+Group.new('TSVariableBuiltin'      , colors.gray      )
+Group.new('TSConditional'      , colors.gray      )
 
 -- Ruby
 Group.new('rubyTSInclude', colors.purple)
 Group.new('rubyTSType', colors.orange)
 Group.new('rubyTSVariable'      , colors.purple      )
+
+-- Javascript
+Group.new('javascriptTSConstructor', colors.orange)

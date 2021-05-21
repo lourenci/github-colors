@@ -27,6 +27,7 @@ lua require('colorbuddy').colorscheme('GitHub-colors')
   - [x] TypeScript
   - [x] JSON
   - [x] yaml (partial, yaml tree-sitter does not parse some fields yet)
+  - [x] JavaScript
   - [ ] Diff color
 - [ ] Black color
 - [ ] Light color
