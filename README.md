@@ -31,6 +31,8 @@ lua require('colorbuddy').colorscheme('GitHub-colors')
   - [x] Diff color
 - [ ] Black color
 - [ ] Light color
+  - [x] ruby
+  - [x] TypeScript
 - [ ] Remove colorbuddy dependency
 
 ## Examples
