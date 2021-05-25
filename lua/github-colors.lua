@@ -13,7 +13,7 @@ if vim.o.background == 'dark' then
   Color.new('blue', '#6cb6ff')
   Color.new('green', '#8ddb8c')
   Color.new('purple', '#dcbdfb')
-  Color.new('yellow', '#c69026')
+  Color.new('yellow', '#ffea7f')
   Color.new('orange', '#f69d50')
 
   Group.new('TSProperty'      , colors.blue      )
@@ -58,14 +58,15 @@ if vim.o.background == 'dark' then
   Group.new('TSConditional'      , colors.gray      )
 
   -- diff
-  Color.new('diffGreen'      , '#46954a')
-  Color.new('diffRed'      , '#c93c37')
-  Color.new('diffText'      , '#ffea7f')
+  Color.new('diffGreen'      , '#255028')
+  Color.new('diffRed'      , '#792421')
+  Color.new('diffChange'      , '#705216')
+  Color.new('diffText'      , '#c69026')
 
   Group.new('DiffAdd'      ,nil, colors.diffGreen)
   Group.new('DiffDelete'      ,nil, colors.diffRed)
-  Group.new('DiffChange'      ,nil,  colors.yellow)
-  Group.new('DiffText'      ,nil, colors.diffText)
+  Group.new('DiffChange'      ,nil,  colors.diffChange)
+  Group.new('DiffText'      ,colors.diffChange, colors.diffText)
 
   -- Ruby
   Group.new('rubyTSInclude', colors.purple)
