@@ -13,7 +13,7 @@ if vim.o.background == 'dark' then
   Color.new('blue', '#6cb6ff')
   Color.new('green', '#8ddb8c')
   Color.new('purple', '#dcbdfb')
-  Color.new('yellow', '#ffea7f')
+  Color.new('yellow', '#c69026')
   Color.new('orange', '#f69d50')
 
   Group.new('TSProperty'      , colors.blue      )
@@ -58,15 +58,14 @@ if vim.o.background == 'dark' then
   Group.new('TSConditional'      , colors.gray      )
 
   -- diff
-  Color.new('diffGreen'      , '#255028')
-  Color.new('diffRed'      , '#792421')
-  Color.new('diffChange'      , '#705216')
-  Color.new('diffText'      , '#c69026')
+  Color.new('diffGreen'      , '#46954a')
+  Color.new('diffRed'      , '#c93c37')
+  Color.new('diffText'      , '#ffea7f')
 
   Group.new('DiffAdd'      ,nil, colors.diffGreen)
   Group.new('DiffDelete'      ,nil, colors.diffRed)
-  Group.new('DiffChange'      ,nil,  colors.diffChange)
-  Group.new('DiffText'      ,colors.diffChange, colors.diffText)
+  Group.new('DiffChange'      ,nil,  colors.yellow)
+  Group.new('DiffText'      ,nil, colors.diffText)
 
   -- Ruby
   Group.new('rubyTSInclude', colors.purple)
@@ -87,6 +86,7 @@ else
   Color.new('purple', '#6f42c1')
   Color.new('yellow', '#fffbdd')
   Color.new('orange', '#e36209')
+  Color.new('folded', '#f1f8ff')
 
   Group.new('TSProperty'      , colors.blue      )
   Group.new('TSString'      , colors.hardBlue      )
@@ -98,9 +98,10 @@ else
   Group.new('TSKeywordFunction'      , colors.red      )
   Group.new('TSConstBuiltin'      , colors.blue      )
   Group.new('TSTag'      , colors.green      )
+  Group.new('Tag'      , colors.green      )
   Group.new('TSTagDelimiter'      , colors.blue      )
   Group.new('TSPunctBracket'      , colors.almostBlack      )
-  Group.new('TSFunction'      , colors.purple      )
+  Group.new('Function'      , colors.purple      )
   Group.new('TSMethod'      , colors.purple      )
   Group.new('TSPunctSpecial'      , colors.almostBlack      )
   Group.new('TSPunctDelimiter'      , colors.almostBlack      )
@@ -115,7 +116,7 @@ else
   Group.new('StatusLineNC', colors.almostBlack, colors.lightBackground2)
   Group.new('LineNr', colors.gray)
   Group.new('CursorLineNr', colors.almostBlack)
-  Group.new('Folded', colors.gray, colors.lightBackground2)
+  Group.new('Folded', colors.gray, colors.folded)
   Group.new('Search', nil, colors.yellow)
   Group.new('Pmenu', colors.almostBlack, colors.lightBackground2)
   Group.new('PmenuSel', colors.lightBackground2, colors.almostBlack)
@@ -128,17 +129,23 @@ else
   Group.new('TSNamespace', colors.almostBlack)
   Group.new('TSVariableBuiltin'      , colors.almostBlack      )
   Group.new('TSConditional'      , colors.almostBlack      )
+  Group.new('TSWarning'      , colors.gray , nil, styles.nocombine + styles.NONE     )
+  Group.new('TSDanger'      , colors.gray , nil, styles.nocombine + styles.NONE     )
+  Group.new('Label', colors.almostBlack)
+  Group.new('PreProc', colors.almostBlack)
+  Group.new('qffilename', colors.almostBlack)
+  Group.new('Visual', colors.lightBackground, colors.gray)
+  Group.new('MatchParen', colors.lightBackground, colors.gray)
 
   -- diff
-  Color.new('diffGreen'      , '#255028')
-  Color.new('diffRed'      , '#792421')
-  Color.new('diffChange'      , '#705216')
-  Color.new('diffText'      , '#c69026')
+  Color.new('diffGreen'      , '#e6ffed')
+  Color.new('diffRed'      , '#ffeef0')
+  Color.new('diffText'      , '#ffea7f')
 
   Group.new('DiffAdd'      ,nil, colors.diffGreen)
   Group.new('DiffDelete'      ,nil, colors.diffRed)
-  Group.new('DiffChange'      ,nil,  colors.diffChange)
-  Group.new('DiffText'      ,colors.diffChange, colors.diffText)
+  Group.new('DiffChange'      ,nil,  colors.yellow)
+  Group.new('DiffText'      ,nil, colors.diffText)
 
   -- Ruby
   Group.new('rubyTSInclude', colors.purple)
