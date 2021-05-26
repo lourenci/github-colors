@@ -91,6 +91,7 @@ else
 
   Group.new('TSProperty'      , colors.blue      )
   Group.new('TSString'      , colors.hardBlue      )
+  Group.new('TSStringEscape'      , colors.hardBlue      )
   Group.new('TSNumber'      , colors.blue      )
   Group.new('TSKeyword'      , colors.red      )
   Group.new('TSOperator'      , colors.blue      )
@@ -137,6 +138,9 @@ else
   Group.new('qffilename', colors.almostBlack)
   Group.new('Visual', colors.lightBackground, colors.gray)
   Group.new('MatchParen', colors.lightBackground, colors.gray)
+  Group.new('TabLine', colors.almostBlack, colors.lightBackground)
+  Group.new('TabLineFill', nil, colors.lightBackground)
+  Group.new('TabLineSel', colors.lightBackground2, colors.gray)
 
   -- diff
   Color.new('diffGreen'      , '#e6ffed')
