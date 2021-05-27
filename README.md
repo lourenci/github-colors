@@ -21,11 +21,10 @@ require'nvim-treesitter.configs'.setup {
   }
 }
 EOF
-Plug 'tjdevries/colorbuddy.nvim'
-Plug 'lourenci/GitHub-colors'
+Plug 'lourenci/github-colors'
 
 set background=dark
-lua require('colorbuddy').colorscheme('github-colors', vim.o.background)
+colorscheme github-colors
 ```
 
 ## Roadmap
@@ -43,7 +42,6 @@ lua require('colorbuddy').colorscheme('github-colors', vim.o.background)
   - [x] JSON
   - [x] yaml (partial, yaml tree-sitter does not parse some fields yet)
   - [x] Diff color
-- [ ] Remove colorbuddy dependency
 - [ ] Black dark?
 
 ## Examples
