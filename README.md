@@ -1,4 +1,4 @@
-# Yet another GitHub colorscheme
+# 🐙 Yet another GitHub colorscheme
 
 I've tried a lot of themes trying to reproduce the GitHub one, but all of them fall trying to reproduce them. This is my attempt.
 
@@ -6,11 +6,15 @@ I've tried a lot of themes trying to reproduce the GitHub one, but all of them f
 
 GitHub uses tree-sitter to parse the source code and to colorize them. This is the reason why it's so hard to reproduce its colors. With `nvim 0.5` we can do the same thing, theoretically.
 
+## Features
+
+- Light color
+- Dim (soft dark) color
+- tree-sitter syntax
+
 ## Setup
 
-How we need to leverage tree-sitter, we can't support `vim` or `nvim 0.4`.
-
-🚧 This is in an early stage. It's expected to have breaking changes. 🚧
+How we need to leverage tree-sitter, we can't support `vim` or `nvim 0.4`, though you can try it. I don't have any plans to try to port it for the mentioned ones.
 
 ```
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
@@ -24,25 +28,9 @@ EOF
 Plug 'lourenci/github-colors'
 
 set background=dark
+" or set background=light
 colorscheme github-colors
 ```
-
-## Roadmap
-
-- [ ] Dim color (soft dark)
-  - [x] ruby
-  - [x] TypeScript
-  - [x] JSON
-  - [x] yaml (partial, yaml tree-sitter does not parse some fields yet)
-  - [x] JavaScript
-  - [x] Diff color
-- [ ] Light color
-  - [x] ruby
-  - [x] TypeScript
-  - [x] JSON
-  - [x] yaml (partial, yaml tree-sitter does not parse some fields yet)
-  - [x] Diff color
-- [ ] Black dark?
 
 ## Examples
 

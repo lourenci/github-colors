@@ -14,8 +14,9 @@ if &background ==# 'dark'
   let s:blue = '#6cb6ff'
   let s:green = '#8ddb8c'
   let s:purple = '#dcbdfb'
-  let s:yellow = '#ffea7f'
+  let s:yellow = '#705216'
   let s:orange = '#f69d50'
+  let s:folded = '#20262E' " 5% darker than dimBackground2
 
   exe "hi! TSProperty guifg="      . s:blue . " guibg=NONE gui=NONE cterm=NONE"
   exe "hi! TSString guifg="      . s:cyan . " guibg=NONE gui=NONE cterm=NONE"
@@ -44,7 +45,7 @@ if &background ==# 'dark'
   exe "hi! StatusLineNC guifg=" . s:gray . " guibg=" . s:dimBackground2 . " gui=NONE cterm=NONE"
   exe "hi! LineNr guifg=". s:grayer . " guibg=NONE gui=NONE cterm=NONE"
   exe "hi! CursorLineNr guifg=". s:gray . " guibg=NONE gui=NONE cterm=NONE"
-  exe "hi! Folded guifg=" . s:grayer . " guibg=" . s:dimBackground2 . " gui=NONE cterm=NONE"
+  exe "hi! Folded guifg=" . s:grayer . " guibg=" . s:folded . " gui=NONE cterm=NONE"
   exe "hi! Search guifg=NONE " . " guibg=" . s:yellow . " gui=NONE cterm=NONE"
   exe "hi! Pmenu guifg=" . s:gray . " guibg=" . s:dimBackground2 . " gui=NONE cterm=NONE"
   exe "hi! PmenuSel guifg=" . s:dimBackground2 . " guibg=" . s:gray . " gui=NONE cterm=NONE"
@@ -55,20 +56,23 @@ if &background ==# 'dark'
   exe "hi! TSLabel guifg=". s:cyan . " guibg=NONE gui=NONE cterm=NONE"
   exe "hi! TSField guifg=". s:green . " guibg=NONE gui=NONE cterm=NONE"
   exe "hi! TSNamespace guifg=". s:gray . " guibg=NONE gui=NONE cterm=NONE"
-  " Group.new('TSVariableBuiltin'      , colors.gray      , nil, styles.nocombine + styles.NONE)
-  exe "hi! TSVariableBuiltin guifg=" . s:yellow . " guibg=NONE gui=NONE cterm=NONE"
+  exe "hi! TSVariableBuiltin guifg=" . s:gray . " guibg=NONE gui=NONE cterm=NONE"
   exe "hi! TSConditional guifg="      . s:gray . " guibg=NONE gui=NONE cterm=NONE"
+  exe "hi! TabLine guifg=" . s:grayer . " guibg=" . s:dimBackground2 . " gui=NONE cterm=NONE"
+  exe "hi! TabLineFill guifg=NONE " . " guibg=" . s:dimBackground . " gui=NONE cterm=NONE"
+  exe "hi! TabLineSel guifg=" . s:gray . " guibg=" . s:dimBackground . " gui=NONE cterm=NONE"
+  exe "hi! Constant guifg="      . s:blue . " guibg=NONE gui=NONE cterm=NONE"
+  exe "hi! Todo guifg=" . s:grayer . " guibg=NONE gui=NONE cterm=NONE"
 
   " -- diff
   let s:diffGreen = '#255028'
   let s:diffRed = '#792421'
-  let s:diffChange = '#705216'
-  let s:diffText = '#c69026'
+  let s:diffText = '#ffea7f'
 
   exe "hi! DiffAdd guifg=NONE " . " guibg=" . s:diffGreen . " gui=NONE cterm=NONE"
   exe "hi! DiffDelete guifg=NONE " . " guibg=" . s:diffRed . " gui=NONE cterm=NONE"
-  exe "hi! DiffChange guifg=NONE " . " guibg=" . s:diffChange . " gui=NONE cterm=NONE"
-  exe "hi! DiffText guifg=" .s:diffChange . " guibg=" . s:diffText . " gui=NONE cterm=NONE"
+  exe "hi! DiffChange guifg=NONE " . " guibg=" . s:yellow . " gui=NONE cterm=NONE"
+  exe "hi! DiffText guifg=NONE guibg=" . s:diffText . " gui=NONE cterm=NONE"
 
   " -- Ruby
   exe "hi! rubyTSInclude guifg=". s:purple . " guibg=NONE gui=NONE cterm=NONE"
@@ -131,21 +135,19 @@ else
   exe "hi! TSLabel guifg=". s:hardBlue . " guibg=NONE gui=NONE cterm=NONE"
   exe "hi! TSField guifg=". s:green . " guibg=NONE gui=NONE cterm=NONE"
   exe "hi! TSNamespace guifg=". s:almostBlack . " guibg=NONE gui=NONE cterm=NONE"
-  " Group.new('TSVariableBuiltin'      , colors.almostBlack      , nil, styles.nocombine + styles.NONE)
   exe "hi! TSVariableBuiltin guifg=" . s:almostBlack . " guibg=NONE gui=NONE cterm=NONE"
   exe "hi! TSConditional guifg="      . s:almostBlack . " guibg=NONE gui=NONE cterm=NONE"
-  " Group.new('TSWarning'      , colors.gray , nil, styles.nocombine + styles.NONE     )
-  exe "hi! TSWarning guifg=" . s:gray . " guibg=NONE gui=NONE cterm=NONE"
-  " Group.new('TSDanger'      , colors.gray , nil, styles.nocombine + styles.NONE     )
+  exe "hi! Todo guifg=" . s:gray . " guibg=NONE gui=NONE cterm=NONE"
   exe "hi! TSDanger guifg=" . s:gray . " guibg=NONE gui=NONE cterm=NONE"
   exe "hi! Label guifg=". s:almostBlack . " guibg=NONE gui=NONE cterm=NONE"
   exe "hi! PreProc guifg=". s:almostBlack . " guibg=NONE gui=NONE cterm=NONE"
   exe "hi! qffilename guifg=". s:almostBlack . " guibg=NONE gui=NONE cterm=NONE"
   exe "hi! Visual guifg=" . s:lightBackground . " guibg=" . s:gray . " gui=NONE cterm=NONE"
   exe "hi! MatchParen guifg=" . s:lightBackground . " guibg=" . s:gray . " gui=NONE cterm=NONE"
-  exe "hi! TabLine guifg=" . s:almostBlack . " guibg=" . s:lightBackground . " gui=NONE cterm=NONE"
+  exe "hi! TabLine guifg=" . s:gray . " guibg=" . s:lightBackground2 . " gui=NONE cterm=NONE"
   exe "hi! TabLineFill guifg=NONE " . " guibg=" . s:lightBackground . " gui=NONE cterm=NONE"
-  exe "hi! TabLineSel guifg=" . s:lightBackground2 . " guibg=" . s:gray . " gui=NONE cterm=NONE"
+  exe "hi! TabLineSel guifg=" . s:almostBlack . " guibg=" . s:lightBackground . " gui=NONE cterm=NONE"
+  exe "hi! Constant guifg="      . s:blue . " guibg=NONE gui=NONE cterm=NONE"
 
   " -- diff
   let s:diffGreen = '#e6ffed'
