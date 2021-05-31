@@ -63,6 +63,8 @@ if &background ==# 'dark'
   exe "hi! TabLineSel guifg=" . s:gray . " guibg=" . s:dimBackground . " gui=NONE cterm=NONE"
   exe "hi! Constant guifg="      . s:blue . " guibg=NONE gui=NONE cterm=NONE"
   exe "hi! Todo guifg=" . s:grayer . " guibg=NONE gui=NONE cterm=NONE"
+  exe "hi! Repeat guifg=" . s:red . " guibg=NONE gui=NONE cterm=NONE"
+  exe "hi! Special guifg=" . s:purple . " guibg=NONE gui=NONE cterm=NONE"
 
   " -- diff
   let s:diffGreen = '#255028'
@@ -148,6 +150,7 @@ else
   exe "hi! TabLineFill guifg=NONE " . " guibg=" . s:lightBackground . " gui=NONE cterm=NONE"
   exe "hi! TabLineSel guifg=" . s:almostBlack . " guibg=" . s:lightBackground . " gui=NONE cterm=NONE"
   exe "hi! Constant guifg="      . s:blue . " guibg=NONE gui=NONE cterm=NONE"
+  exe "hi! Repeat guifg=" . s:red . " guibg=NONE gui=NONE cterm=NONE"
 
   " -- diff
   let s:diffGreen = '#e6ffed'
