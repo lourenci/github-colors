@@ -57,7 +57,7 @@ if &background ==# 'dark'
   exe "hi! TSField guifg=". s:green . " guibg=NONE gui=NONE cterm=NONE"
   exe "hi! TSNamespace guifg=". s:gray . " guibg=NONE gui=NONE cterm=NONE"
   exe "hi! TSVariableBuiltin guifg=" . s:gray . " guibg=NONE gui=NONE cterm=NONE"
-  exe "hi! TSConditional guifg="      . s:gray . " guibg=NONE gui=NONE cterm=NONE"
+  exe "hi! Conditional guifg="      . s:gray . " guibg=NONE gui=NONE cterm=NONE"
   exe "hi! TabLine guifg=" . s:grayer . " guibg=" . s:dimBackground2 . " gui=NONE cterm=NONE"
   exe "hi! TabLineFill guifg=NONE " . " guibg=" . s:dimBackground . " gui=NONE cterm=NONE"
   exe "hi! TabLineSel guifg=" . s:gray . " guibg=" . s:dimBackground . " gui=NONE cterm=NONE"
@@ -138,19 +138,20 @@ else
   exe "hi! TSField guifg=". s:green . " guibg=NONE gui=NONE cterm=NONE"
   exe "hi! TSNamespace guifg=". s:almostBlack . " guibg=NONE gui=NONE cterm=NONE"
   exe "hi! TSVariableBuiltin guifg=" . s:almostBlack . " guibg=NONE gui=NONE cterm=NONE"
-  exe "hi! TSConditional guifg="      . s:almostBlack . " guibg=NONE gui=NONE cterm=NONE"
+  exe "hi! Conditional guifg="      . s:red . " guibg=NONE gui=NONE cterm=NONE"
   exe "hi! Todo guifg=" . s:gray . " guibg=NONE gui=NONE cterm=NONE"
   exe "hi! TSDanger guifg=" . s:gray . " guibg=NONE gui=NONE cterm=NONE"
   exe "hi! Label guifg=". s:almostBlack . " guibg=NONE gui=NONE cterm=NONE"
   exe "hi! PreProc guifg=". s:almostBlack . " guibg=NONE gui=NONE cterm=NONE"
-  exe "hi! qffilename guifg=". s:almostBlack . " guibg=NONE gui=NONE cterm=NONE"
+  exe "hi! qffilename guifg=". s:hardBlue . " guibg=NONE gui=NONE cterm=NONE"
   exe "hi! Visual guifg=" . s:lightBackground . " guibg=" . s:gray . " gui=NONE cterm=NONE"
-  exe "hi! MatchParen guifg=" . s:lightBackground . " guibg=" . s:gray . " gui=NONE cterm=NONE"
+  exe "hi! MatchParen guifg=NONE guibg=" . s:yellow . " gui=bold cterm=NONE"
   exe "hi! TabLine guifg=" . s:gray . " guibg=" . s:lightBackground2 . " gui=NONE cterm=NONE"
   exe "hi! TabLineFill guifg=NONE " . " guibg=" . s:lightBackground . " gui=NONE cterm=NONE"
   exe "hi! TabLineSel guifg=" . s:almostBlack . " guibg=" . s:lightBackground . " gui=NONE cterm=NONE"
-  exe "hi! Constant guifg="      . s:blue . " guibg=NONE gui=NONE cterm=NONE"
+  exe "hi! Constant guifg="      . s:almostBlack . " guibg=NONE gui=NONE cterm=NONE"
   exe "hi! Repeat guifg=" . s:red . " guibg=NONE gui=NONE cterm=NONE"
+  exe "hi! Exception guifg=" . s:red . " guibg=NONE gui=NONE cterm=NONE"
 
   " -- diff
   let s:diffGreen = '#e6ffed'
@@ -161,6 +162,9 @@ else
   exe "hi! DiffDelete guifg=NONE " . " guibg=" . s:diffRed . " gui=NONE cterm=NONE"
   exe "hi! DiffChange guifg=NONE " . " guibg=" . s:yellow . " gui=NONE cterm=NONE"
   exe "hi! DiffText guifg=NONE guibg=" . s:diffText . " gui=NONE cterm=NONE"
+
+  " -- netwr
+  exe "hi! Directory guifg=" . s:hardBlue . " guibg=NONE gui=NONE cterm=NONE"
 
   " -- Ruby
   exe "hi! rubyTSInclude guifg=". s:purple . " guibg=NONE gui=NONE cterm=NONE"
