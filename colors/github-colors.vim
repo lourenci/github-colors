@@ -53,11 +53,11 @@ if &background ==# 'dark'
   exe "hi! SignColumn guifg=" . s:grayer . " guibg=" . s:dimBackground . " gui=NONE cterm=NONE"
   exe "hi! TSSymbol guifg=". s:cyan . " guibg=NONE gui=NONE cterm=NONE"
   exe "hi! TSFloat guifg=". s:blue . " guibg=NONE gui=NONE cterm=NONE"
-  exe "hi! TSLabel guifg=". s:cyan . " guibg=NONE gui=NONE cterm=NONE"
+  exe "hi! Label guifg=". s:blue . " guibg=NONE gui=NONE cterm=NONE"
   exe "hi! TSField guifg=". s:green . " guibg=NONE gui=NONE cterm=NONE"
   exe "hi! TSNamespace guifg=". s:gray . " guibg=NONE gui=NONE cterm=NONE"
   exe "hi! TSVariableBuiltin guifg=" . s:gray . " guibg=NONE gui=NONE cterm=NONE"
-  exe "hi! Conditional guifg="      . s:gray . " guibg=NONE gui=NONE cterm=NONE"
+  exe "hi! Conditional guifg="      . s:red . " guibg=NONE gui=NONE cterm=NONE"
   exe "hi! TabLine guifg=" . s:grayer . " guibg=" . s:dimBackground2 . " gui=NONE cterm=NONE"
   exe "hi! TabLineFill guifg=NONE " . " guibg=" . s:dimBackground . " gui=NONE cterm=NONE"
   exe "hi! TabLineSel guifg=" . s:gray . " guibg=" . s:dimBackground . " gui=NONE cterm=NONE"
@@ -65,6 +65,7 @@ if &background ==# 'dark'
   exe "hi! Todo guifg=" . s:grayer . " guibg=NONE gui=NONE cterm=NONE"
   exe "hi! Repeat guifg=" . s:red . " guibg=NONE gui=NONE cterm=NONE"
   exe "hi! Special guifg=" . s:purple . " guibg=NONE gui=NONE cterm=NONE"
+  exe "hi! Exception guifg=" . s:red . " guibg=NONE gui=NONE cterm=NONE"
 
   " -- diff
   let s:diffGreen = '#255028'
@@ -79,7 +80,6 @@ if &background ==# 'dark'
   " -- Ruby
   exe "hi! rubyTSInclude guifg=". s:purple . " guibg=NONE gui=NONE cterm=NONE"
   exe "hi! rubyTSType guifg=". s:orange . " guibg=NONE gui=NONE cterm=NONE"
-  exe "hi! rubyTSVariable guifg="      . s:purple . " guibg=NONE gui=NONE cterm=NONE"
 
   " -- Javascript
   exe "hi! javascriptTSConstructor guifg=". s:orange . " guibg=NONE gui=NONE cterm=NONE"
@@ -134,7 +134,6 @@ else
   exe "hi! SignColumn guifg=" . s:gray . " guibg=" . s:lightBackground . " gui=NONE cterm=NONE"
   exe "hi! TSSymbol guifg=". s:hardBlue . " guibg=NONE gui=NONE cterm=NONE"
   exe "hi! TSFloat guifg=". s:blue . " guibg=NONE gui=NONE cterm=NONE"
-  exe "hi! TSLabel guifg=". s:hardBlue . " guibg=NONE gui=NONE cterm=NONE"
   exe "hi! TSField guifg=". s:green . " guibg=NONE gui=NONE cterm=NONE"
   exe "hi! TSNamespace guifg=". s:almostBlack . " guibg=NONE gui=NONE cterm=NONE"
   exe "hi! TSVariableBuiltin guifg=" . s:almostBlack . " guibg=NONE gui=NONE cterm=NONE"
@@ -169,7 +168,6 @@ else
   " -- Ruby
   exe "hi! rubyTSInclude guifg=". s:purple . " guibg=NONE gui=NONE cterm=NONE"
   exe "hi! rubyTSType guifg=". s:orange . " guibg=NONE gui=NONE cterm=NONE"
-  exe "hi! rubyTSVariable guifg="      . s:purple . " guibg=NONE gui=NONE cterm=NONE"
 
   " -- Javascript
   exe "hi! javascriptTSConstructor guifg=". s:orange . " guibg=NONE gui=NONE cterm=NONE"
