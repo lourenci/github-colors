@@ -71,7 +71,7 @@ if &background ==# 'dark'
   " -- diff
   let s:diffGreen = '#255028'
   let s:diffRed = '#792421'
-  let s:diffText = '#ffea7f'
+  let s:diffText = '#9b711e'
 
   exe "hi! DiffAdd guifg=NONE " . " guibg=" . s:diffGreen . " gui=NONE cterm=NONE"
   exe "hi! DiffDelete guifg=NONE " . " guibg=" . s:diffRed . " gui=NONE cterm=NONE"
