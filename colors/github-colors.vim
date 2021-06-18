@@ -22,7 +22,6 @@ if &background ==# 'dark'
   exe "hi! TSString guifg="      . s:cyan . " guibg=NONE gui=NONE cterm=NONE"
   exe "hi! TSNumber guifg="      . s:blue . " guibg=NONE gui=NONE cterm=NONE"
   exe "hi! TSKeyword guifg="      . s:red . " guibg=NONE gui=NONE cterm=NONE"
-  exe "hi! TSOperator guifg="      . s:blue . " guibg=NONE gui=NONE cterm=NONE"
   exe "hi! TSInclude guifg="      . s:red . " guibg=NONE gui=NONE cterm=NONE"
   exe "hi! TSVariable guifg="      . s:gray . " guibg=NONE gui=NONE cterm=NONE"
   exe "hi! TSKeywordFunction guifg="      . s:red . " guibg=NONE gui=NONE cterm=NONE"
@@ -37,9 +36,9 @@ if &background ==# 'dark'
   exe "hi! TSParameter guifg=". s:gray . " guibg=NONE gui=NONE cterm=NONE"
   exe "hi! Normal guifg=" . s:gray . " guibg=" . s:dimBackground . " gui=NONE cterm=NONE"
   exe "hi! TSConstructor guifg=". s:gray . " guibg=NONE gui=NONE cterm=NONE"
-  exe "hi! TSType guifg=". s:gray . " guibg=NONE gui=NONE cterm=NONE"
+  exe "hi! Type guifg=". s:gray . " guibg=NONE gui=NONE cterm=NONE"
   exe "hi! TSTypeBuiltin guifg=". s:gray . " guibg=NONE gui=NONE cterm=NONE"
-  exe "hi! TSOperator guifg=". s:blue . " guibg=NONE gui=NONE cterm=NONE"
+  exe "hi! Operator guifg=". s:blue . " guibg=NONE gui=NONE cterm=NONE"
   exe "hi! TSBoolean guifg=". s:blue . " guibg=NONE gui=NONE cterm=NONE"
   exe "hi! StatusLine guifg=" . s:dimBackground2 . " guibg=" . s:grayer . " gui=NONE cterm=NONE"
   exe "hi! StatusLineNC guifg=" . s:gray . " guibg=" . s:dimBackground2 . " gui=NONE cterm=NONE"
@@ -66,6 +65,8 @@ if &background ==# 'dark'
   exe "hi! Repeat guifg=" . s:red . " guibg=NONE gui=NONE cterm=NONE"
   exe "hi! Special guifg=" . s:purple . " guibg=NONE gui=NONE cterm=NONE"
   exe "hi! Exception guifg=" . s:red . " guibg=NONE gui=NONE cterm=NONE"
+  exe "hi! Visual guifg=" . s:dimBackground . " guibg=" . s:grayer . " gui=NONE cterm=NONE"
+  exe "hi! MatchParen guifg=NONE guibg=" . s:yellow . " gui=bold cterm=NONE"
 
   " -- diff
   let s:diffGreen = '#255028'
@@ -76,6 +77,9 @@ if &background ==# 'dark'
   exe "hi! DiffDelete guifg=NONE " . " guibg=" . s:diffRed . " gui=NONE cterm=NONE"
   exe "hi! DiffChange guifg=NONE " . " guibg=" . s:yellow . " gui=NONE cterm=NONE"
   exe "hi! DiffText guifg=NONE guibg=" . s:diffText . " gui=NONE cterm=NONE"
+  "
+  " -- netwr
+  exe "hi! Directory guifg=" . s:cyan . " guibg=NONE gui=NONE cterm=NONE"
 
   " -- Ruby
   exe "hi! rubyTSInclude guifg=". s:purple . " guibg=NONE gui=NONE cterm=NONE"
@@ -102,10 +106,10 @@ else
   exe "hi! TSStringEscape guifg="      . s:hardBlue . " guibg=NONE gui=NONE cterm=NONE"
   exe "hi! TSNumber guifg="      . s:blue . " guibg=NONE gui=NONE cterm=NONE"
   exe "hi! TSKeyword guifg="      . s:red . " guibg=NONE gui=NONE cterm=NONE"
-  exe "hi! TSOperator guifg="      . s:blue . " guibg=NONE gui=NONE cterm=NONE"
   exe "hi! TSInclude guifg="      . s:red . " guibg=NONE gui=NONE cterm=NONE"
   exe "hi! TSVariable guifg="      . s:almostBlack . " guibg=NONE gui=NONE cterm=NONE"
   exe "hi! TSKeywordFunction guifg="      . s:red . " guibg=NONE gui=NONE cterm=NONE"
+  exe "hi! TSKeywordOperator guifg="      . s:red . " guibg=NONE gui=NONE cterm=NONE"
   exe "hi! TSConstBuiltin guifg="      . s:blue . " guibg=NONE gui=NONE cterm=NONE"
   exe "hi! TSTag guifg="      . s:green . " guibg=NONE gui=NONE cterm=NONE"
   exe "hi! Tag guifg="      . s:green . " guibg=NONE gui=NONE cterm=NONE"
@@ -118,9 +122,9 @@ else
   exe "hi! TSParameter guifg=". s:almostBlack . " guibg=NONE gui=NONE cterm=NONE"
   exe "hi! Normal guifg=" . s:almostBlack . " guibg=" . s:lightBackground . " gui=NONE cterm=NONE"
   exe "hi! TSConstructor guifg=". s:almostBlack . " guibg=NONE gui=NONE cterm=NONE"
-  exe "hi! TSType guifg=". s:almostBlack . " guibg=NONE gui=NONE cterm=NONE"
+  exe "hi! Type guifg=". s:almostBlack . " guibg=NONE gui=NONE cterm=NONE"
   exe "hi! TSTypeBuiltin guifg=". s:almostBlack . " guibg=NONE gui=NONE cterm=NONE"
-  exe "hi! TSOperator guifg=". s:blue . " guibg=NONE gui=NONE cterm=NONE"
+  exe "hi! Operator guifg=". s:blue . " guibg=NONE gui=NONE cterm=NONE"
   exe "hi! TSBoolean guifg=". s:blue . " guibg=NONE gui=NONE cterm=NONE"
   exe "hi! StatusLine guifg=" . s:lightBackground2 . " guibg=" . s:gray . " gui=NONE cterm=NONE"
   exe "hi! StatusLineNC guifg=" . s:almostBlack . " guibg=" . s:lightBackground2 . " gui=NONE cterm=NONE"
@@ -142,7 +146,6 @@ else
   exe "hi! TSDanger guifg=" . s:gray . " guibg=NONE gui=NONE cterm=NONE"
   exe "hi! Label guifg=". s:almostBlack . " guibg=NONE gui=NONE cterm=NONE"
   exe "hi! PreProc guifg=". s:almostBlack . " guibg=NONE gui=NONE cterm=NONE"
-  exe "hi! qffilename guifg=". s:hardBlue . " guibg=NONE gui=NONE cterm=NONE"
   exe "hi! Visual guifg=" . s:lightBackground . " guibg=" . s:gray . " gui=NONE cterm=NONE"
   exe "hi! MatchParen guifg=NONE guibg=" . s:yellow . " gui=bold cterm=NONE"
   exe "hi! TabLine guifg=" . s:gray . " guibg=" . s:lightBackground2 . " gui=NONE cterm=NONE"
@@ -171,4 +174,5 @@ else
 
   " -- Javascript
   exe "hi! javascriptTSConstructor guifg=". s:orange . " guibg=NONE gui=NONE cterm=NONE"
+  exe "hi! javascriptTSType guifg=". s:orange . " guibg=NONE gui=NONE cterm=NONE"
 endif
