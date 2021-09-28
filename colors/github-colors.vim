@@ -87,6 +87,9 @@ if &background ==# 'dark'
 
   " -- Javascript
   exe "hi! javascriptTSConstructor guifg=". s:orange . " guibg=NONE gui=NONE cterm=NONE"
+
+  " lsp"
+  exe "hi! DiagnosticError  guifg=". s:diffRed . " guibg=NONE gui=NONE cterm=NONE"
 else
   let s:lightBackground = '#ffffff'
   let s:lightBackground2 = '#f6f8fa'
@@ -175,4 +178,7 @@ else
   " -- Javascript
   exe "hi! javascriptTSConstructor guifg=". s:orange . " guibg=NONE gui=NONE cterm=NONE"
   exe "hi! javascriptTSType guifg=". s:orange . " guibg=NONE gui=NONE cterm=NONE"
+
+  " lsp
+  exe "hi! DiagnosticError  guifg=". s:diffRed . " guibg=NONE gui=NONE cterm=NONE"
 endif
