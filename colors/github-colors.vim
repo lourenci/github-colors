@@ -180,5 +180,5 @@ else
   exe "hi! javascriptTSType guifg=". s:orange . " guibg=NONE gui=NONE cterm=NONE"
 
   " lsp
-  exe "hi! DiagnosticError  guifg=". s:diffRed . " guibg=NONE gui=NONE cterm=NONE"
+  exe "hi! DiagnosticError  guifg=". s:red . " guibg=NONE gui=NONE cterm=NONE"
 endif
