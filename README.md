@@ -2,6 +2,8 @@
 
 I've tried a lot of themes trying to reproduce the GitHub one, but all of them fall trying to reproduce them. This is my attempt.
 
+Please, don't expect me to solve your issues. I don't make OSS for living. As I use this colorscheme in daily-basis, I'll try to keep it updated with the GitHub colors as soon as possible. Feel free to open a PR and get it merged.
+
 ## Why this one is different?
 
 GitHub uses tree-sitter to parse the source code and to colorize them. This is the reason why it's so hard to reproduce its colors. With `nvim 0.5` we can do the same thing, theoretically.
@@ -14,12 +16,14 @@ GitHub uses tree-sitter to parse the source code and to colorize them. This is t
 
 ## Setup
 
-How we need to leverage tree-sitter, we can't support `vim` or `nvim 0.4`, though you can try it. I don't have any plans to try to port it for the mentioned ones.
+How we need to leverage tree-sitter so we can't support `vim` or `nvim 0.4`, though you can try it since we use the "tree-sitter <> vim" bindings highlights when is possible. I don't have any plans to try to port it for the mentioned ones.
 
 ```viml
 
-" for vim 0.5.x
+" for nvim 0.5
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate', 'branch': '0.5-compat' }
+" for nvim 0.6
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate' }
 Plug 'lourenci/github-colors', { 'branch': 'main' }
 
 "
