@@ -16,12 +16,11 @@ GitHub uses tree-sitter to parse the source code and to colorize them. This is t
 
 How we need to leverage tree-sitter, we can't support `vim` or `nvim 0.4`, though you can try it. I don't have any plans to try to port it for the mentioned ones.
 
-```
+```viml
 
 " for vim 0.5.x
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate', 'branch': '0.5-compat' }
 Plug 'lourenci/github-colors', { 'branch': 'main' }
-
 
 "
 " if you are using vim-plug, make sure below config is after
