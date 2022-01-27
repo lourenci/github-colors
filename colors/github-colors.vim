@@ -133,6 +133,7 @@ else
   exe "hi! StatusLineNC guifg=" . s:almostBlack . " guibg=" . s:lightBackground2 . " gui=NONE cterm=NONE"
   exe "hi! LineNr guifg=". s:gray . " guibg=NONE gui=NONE cterm=NONE"
   exe "hi! CursorLineNr guifg=". s:almostBlack . " guibg=NONE gui=NONE cterm=NONE"
+  exe "hi! CursorLine guifg=NONE guibg=". s:lightBackground2 . "  gui=NONE cterm=NONE"
   exe "hi! Folded guifg=" . s:gray . " guibg=" . s:folded . " gui=NONE cterm=NONE"
   exe "hi! Search guifg=NONE " . " guibg=" . s:yellow . " gui=NONE cterm=NONE"
   exe "hi! Pmenu guifg=" . s:almostBlack . " guibg=" . s:lightBackground2 . " gui=NONE cterm=NONE"
