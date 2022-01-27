@@ -182,4 +182,6 @@ else
 
   " lsp
   exe "hi! DiagnosticError  guifg=". s:red . " guibg=NONE gui=NONE cterm=NONE"
+
+  exe "hi! VertSplit  guifg=NONE guibg=NONE gui=NONE cterm=NONE"
 endif
