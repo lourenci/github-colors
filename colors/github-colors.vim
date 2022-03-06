@@ -189,6 +189,6 @@ else
   exe "hi! markdownTSPunctSpecial guifg=#0550ae guibg=NONE gui=bold cterm=NONE"
   exe "hi! TSTitle guifg=#0550ae guibg=NONE gui=bold cterm=NONE"
   exe "hi! TSLiteral guifg=#0550ae guibg=NONE gui=NONE cterm=NONE"
-  exe "hi! markdownTSURI guifg=NONE guibg=NONE gui=NONE cterm=NONE"
+  exe "hi! markdownTSURI guifg=". s:almostBlack . " guibg=NONE gui=NONE cterm=NONE"
   exe "hi! TSTextReference guifg=#8250df guibg=NONE gui=NONE cterm=NONE"
 endif
