@@ -206,3 +206,5 @@ else
   " gitcommit
   exe "hi! Statement guifg=#0550ae guibg=NONE gui=bold cterm=NONE"
 endif
+
+exe "hi! EndOfBuffer guifg=NONE guibg=NONE gui=NONE cterm=NONE"
