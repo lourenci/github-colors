@@ -95,7 +95,7 @@ if &background ==# 'dark'
   exe "hi! TSTitle guifg=#316dca guibg=NONE gui=bold cterm=NONE"
   exe "hi! TSLiteral guifg=#6cb6ff guibg=NONE gui=NONE cterm=NONE"
   exe "hi! markdownTSPunctDelimiter guifg=#6cb6ff guibg=NONE gui=NONE cterm=NONE"
-  exe "hi! markdownTSPunctSpecial guifg=#f69d50 guibg=NONE gui=bold cterm=NONE"
+  exe "hi! markdownTSPunctSpecial guifg=#f69d50 guibg=NONE gui=NONE cterm=NONE"
 else
   let s:lightBackground = '#ffffff'
   let s:lightBackground2 = '#f6f8fa'
