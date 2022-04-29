@@ -96,6 +96,7 @@ if &background ==# 'dark'
   exe "hi! TSLiteral guifg=#6cb6ff guibg=NONE gui=NONE cterm=NONE"
   exe "hi! markdownTSPunctDelimiter guifg=#6cb6ff guibg=NONE gui=NONE cterm=NONE"
   exe "hi! markdownTSPunctSpecial guifg=#f69d50 guibg=NONE gui=NONE cterm=NONE"
+  exe "hi! TSEmphasis guifg=NONE guibg=NONE gui=italic cterm=NONE"
 
   " gitcommit
   exe "hi! Statement guifg=#316dca guibg=NONE gui=bold cterm=NONE"
@@ -202,6 +203,7 @@ else
   exe "hi! markdownTSNone guifg=#0550ae guibg=NONE gui=NONE cterm=NONE"
   exe "hi! markdownTSURI guifg=". s:almostBlack . " guibg=NONE gui=NONE cterm=NONE"
   exe "hi! TSTextReference guifg=#8250df guibg=NONE gui=NONE cterm=NONE"
+  exe "hi! TSEmphasis guifg=NONE guibg=NONE gui=italic cterm=NONE"
 
   " gitcommit
   exe "hi! Statement guifg=#0550ae guibg=NONE gui=bold cterm=NONE"
