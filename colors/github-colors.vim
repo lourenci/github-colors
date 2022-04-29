@@ -209,3 +209,4 @@ endif
 
 exe "hi! EndOfBuffer guifg=NONE guibg=NONE gui=NONE cterm=NONE"
 exe "hi! TSEmphasis guifg=NONE guibg=NONE gui=italic cterm=NONE"
+exe "hi! TSStrong guifg=NONE guibg=NONE gui=bold cterm=NONE"
