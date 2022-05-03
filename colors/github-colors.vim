@@ -192,8 +192,6 @@ else
   " lsp
   exe "hi! DiagnosticError  guifg=". s:red . " guibg=NONE gui=NONE cterm=NONE"
 
-  exe "hi! VertSplit  guifg=NONE guibg=NONE gui=NONE cterm=NONE"
-
   " markdown
   exe "hi! markdownTSPunctSpecial guifg=#0550ae guibg=NONE gui=bold cterm=NONE"
   exe "hi! TSTitle guifg=#0550ae guibg=NONE gui=bold cterm=NONE"
@@ -207,6 +205,7 @@ else
   exe "hi! Statement guifg=#0550ae guibg=NONE gui=bold cterm=NONE"
 endif
 
+exe "hi! VertSplit guifg=NONE guibg=NONE gui=NONE cterm=NONE"
 exe "hi! EndOfBuffer guifg=NONE guibg=NONE gui=NONE cterm=NONE"
 exe "hi! TSEmphasis guifg=NONE guibg=NONE gui=italic cterm=NONE"
 exe "hi! TSStrong guifg=NONE guibg=NONE gui=bold cterm=NONE"
