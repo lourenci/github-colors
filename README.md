@@ -13,6 +13,7 @@ GitHub uses tree-sitter to parse the source code and to colorize them. This is t
 - Light color
 - Dim (soft dark) color
 - tree-sitter syntax
+- True color only
 
 ## Setup
 
