@@ -173,6 +173,7 @@ else
   exe "hi! Constant guifg="      . s:almostBlack . " guibg=NONE gui=NONE"
   exe "hi! Repeat guifg=" . s:red . " guibg=NONE gui=NONE"
   exe "hi! Exception guifg=" . s:red . " guibg=NONE gui=NONE"
+  exe "hi! NonText guifg=" . s:folded10PercGrayer . " guibg=NONE gui=NONE"
 
   " -- diff
   let s:diffGreen = '#e6ffed'
