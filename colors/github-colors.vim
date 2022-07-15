@@ -110,6 +110,7 @@ else
   let s:purple = '#8250DF'
   let s:yellow = '#fffbdd'
   let s:orange = '#e36209'
+  let s:brown = '#953800'
   let s:folded = '#F6F8FA'
   let s:folded10PercGrayer = '#DADBDD'
 
@@ -134,7 +135,8 @@ else
   exe "hi! TSPunctDelimiter guifg="      . s:almostBlack . " guibg=NONE gui=NONE"
   exe "hi! TSParameter guifg=". s:almostBlack . " guibg=NONE gui=NONE"
   exe "hi! Normal guifg=" . s:almostBlack . " guibg=" . s:lightBackground . " gui=NONE"
-  exe "hi! TSConstructor guifg=". s:almostBlack . " guibg=NONE gui=NONE"
+  exe "hi! TSConstructor guifg=". s:brown . " guibg=NONE gui=NONE"
+  exe "hi! TSFunction guifg=". s:brown . " guibg=NONE gui=NONE"
   exe "hi! Type guifg=". s:almostBlack . " guibg=NONE gui=NONE"
   exe "hi! TSTypeBuiltin guifg=". s:almostBlack . " guibg=NONE gui=NONE"
   exe "hi! Operator guifg=". s:blue . " guibg=NONE gui=NONE"
@@ -190,7 +192,6 @@ else
   exe "hi! rubyTSType guifg=". s:orange . " guibg=NONE gui=NONE"
 
   " -- Javascript
-  exe "hi! javascriptTSConstructor guifg=". s:orange . " guibg=NONE gui=NONE"
   exe "hi! javascriptTSType guifg=". s:orange . " guibg=NONE gui=NONE"
 
   " lsp
