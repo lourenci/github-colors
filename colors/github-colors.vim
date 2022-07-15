@@ -42,7 +42,11 @@ if &background ==# 'dark'
   exe "hi! TSBoolean guifg=". s:blue . " guibg=NONE gui=NONE"
   exe "hi! StatusLine guifg=" . s:dimBackground2 . " guibg=" . s:grayer . " gui=NONE"
   exe "hi! StatusLineNC guifg=" . s:gray . " guibg=" . s:dimBackground2 . " gui=NONE"
-  exe "hi! LineNr guifg=". s:grayer . " guibg=NONE gui=NONE"
+
+  exe "hi! LineNr guifg=". s:gray . " guibg=NONE gui=NONE"
+  exe "hi! LineNrAbove guifg=". s:grayer . " guibg=NONE gui=NONE"
+  exe "hi! LineNrBelow guifg=". s:grayer . " guibg=NONE gui=NONE"
+
   exe "hi! Folded guifg=" . s:grayer . " guibg=" . s:folded . " gui=NONE"
   exe "hi! Search guifg=NONE " . " guibg=" . s:yellow . " gui=NONE"
   exe "hi! Pmenu guifg=" . s:gray . " guibg=" . s:dimBackground2 . " gui=NONE"
