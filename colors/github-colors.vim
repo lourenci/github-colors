@@ -43,7 +43,6 @@ if &background ==# 'dark'
   exe "hi! StatusLine guifg=" . s:dimBackground2 . " guibg=" . s:grayer . " gui=NONE"
   exe "hi! StatusLineNC guifg=" . s:gray . " guibg=" . s:dimBackground2 . " gui=NONE"
   exe "hi! LineNr guifg=". s:grayer . " guibg=NONE gui=NONE"
-  exe "hi! CursorLineNr guifg=". s:gray . " guibg=NONE gui=NONE"
   exe "hi! Folded guifg=" . s:grayer . " guibg=" . s:folded . " gui=NONE"
   exe "hi! Search guifg=NONE " . " guibg=" . s:yellow . " gui=NONE"
   exe "hi! Pmenu guifg=" . s:gray . " guibg=" . s:dimBackground2 . " gui=NONE"
@@ -112,6 +111,7 @@ else
   let s:yellow = '#fffbdd'
   let s:orange = '#e36209'
   let s:folded = '#F6F8FA'
+  let s:folded10PercGrayer = '#DADBDD'
 
   exe "hi! TSProperty guifg="      . s:blue . " guibg=NONE gui=NONE"
   exe "hi! TSString guifg="      . s:hardBlue . " guibg=NONE gui=NONE"
@@ -141,8 +141,11 @@ else
   exe "hi! TSBoolean guifg=". s:blue . " guibg=NONE gui=NONE"
   exe "hi! StatusLine guifg=" . s:lightBackground2 . " guibg=" . s:gray . " gui=NONE"
   exe "hi! StatusLineNC guifg=" . s:almostBlack . " guibg=" . s:lightBackground2 . " gui=NONE"
+
   exe "hi! LineNr guifg=". s:gray . " guibg=NONE gui=NONE"
-  exe "hi! CursorLineNr guifg=". s:almostBlack . " guibg=NONE gui=NONE"
+  exe "hi! LineNrAbove guifg=". s:folded10PercGrayer . " guibg=NONE gui=NONE"
+  exe "hi! LineNrBelow guifg=". s:folded10PercGrayer . " guibg=NONE gui=NONE"
+
   exe "hi! CursorLine guifg=NONE guibg=". s:lightBackground2 . "  gui=NONE"
   exe "hi! Folded guifg=" . s:gray . " guibg=" . s:folded . " gui=NONE"
   exe "hi! Search guifg=NONE " . " guibg=" . s:yellow . " gui=NONE"
