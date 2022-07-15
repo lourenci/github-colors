@@ -15,6 +15,12 @@ GitHub uses tree-sitter to parse the source code and to colorize them. This is t
 - tree-sitter syntax
 - True color only
 
+## Tested languages
+
+- Go
+- Yaml
+- JSON
+
 ## Setup
 
 How we need to leverage tree-sitter so we can't support `vim` or `nvim 0.4`, though you can try it since we use the "tree-sitter <> vim" bindings highlights when is possible. I don't have any plans to try to port it for the mentioned ones.

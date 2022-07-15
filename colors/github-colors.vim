@@ -102,16 +102,16 @@ if &background ==# 'dark'
 else
   let s:lightBackground = '#ffffff'
   let s:lightBackground2 = '#f6f8fa'
-  let s:almostBlack ='#24292e'
-  let s:gray = '#6a737d'
-  let s:red = '#d73a49'
-  let s:hardBlue = '#032f62'
-  let s:blue = '#005cc5'
-  let s:green = '#22863a'
-  let s:purple = '#6f42c1'
+  let s:almostBlack ='#24292F'
+  let s:gray = '#6E7781'
+  let s:red = '#CF222E'
+  let s:hardBlue = '#0A3069'
+  let s:blue = '#0550AE'
+  let s:green = '#116329'
+  let s:purple = '#8250DF'
   let s:yellow = '#fffbdd'
   let s:orange = '#e36209'
-  let s:folded = '#f1f8ff'
+  let s:folded = '#F6F8FA'
 
   exe "hi! TSProperty guifg="      . s:blue . " guibg=NONE gui=NONE"
   exe "hi! TSString guifg="      . s:hardBlue . " guibg=NONE gui=NONE"
@@ -125,6 +125,7 @@ else
   exe "hi! TSConstBuiltin guifg="      . s:blue . " guibg=NONE gui=NONE"
   exe "hi! TSTag guifg="      . s:green . " guibg=NONE gui=NONE"
   exe "hi! Tag guifg="      . s:green . " guibg=NONE gui=NONE"
+  exe "hi! TSLabel guifg="      . s:green . " guibg=NONE gui=NONE"
   exe "hi! TSTagDelimiter guifg="      . s:blue . " guibg=NONE gui=NONE"
   exe "hi! TSPunctBracket guifg="      . s:almostBlack . " guibg=NONE gui=NONE"
   exe "hi! Function guifg="      . s:purple . " guibg=NONE gui=NONE"
@@ -151,7 +152,7 @@ else
   exe "hi! SignColumn guifg=" . s:gray . " guibg=" . s:lightBackground . " gui=NONE"
   exe "hi! TSSymbol guifg=". s:hardBlue . " guibg=NONE gui=NONE"
   exe "hi! TSFloat guifg=". s:blue . " guibg=NONE gui=NONE"
-  exe "hi! TSField guifg=". s:green . " guibg=NONE gui=NONE"
+  exe "hi! TSField guifg=". s:blue . " guibg=NONE gui=NONE"
   exe "hi! TSNamespace guifg=". s:almostBlack . " guibg=NONE gui=NONE"
   exe "hi! TSVariableBuiltin guifg=" . s:almostBlack . " guibg=NONE gui=NONE"
   exe "hi! Conditional guifg="      . s:red . " guibg=NONE gui=NONE"
@@ -203,6 +204,9 @@ else
 
   " gitcommit
   exe "hi! Statement guifg=#0550ae guibg=NONE gui=bold"
+
+  " yaml
+  exe "hi! yamlTSField guifg=". s:green . " guibg=NONE gui=NONE"
 endif
 
 exe "hi! VertSplit guifg=NONE guibg=NONE gui=NONE"
