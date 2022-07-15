@@ -17,6 +17,7 @@ if &background ==# 'dark'
   let s:yellow = '#705216'
   let s:orange = '#f69d50'
   let s:folded = '#20262E' " 5% darker than dimBackground2
+  let s:gray20PercGrayer = '#45525E'
 
   exe "hi! TSProperty guifg="      . s:blue . " guibg=NONE gui=NONE"
   exe "hi! TSString guifg="      . s:cyan . " guibg=NONE gui=NONE"
@@ -43,9 +44,9 @@ if &background ==# 'dark'
   exe "hi! StatusLine guifg=" . s:dimBackground2 . " guibg=" . s:grayer . " gui=NONE"
   exe "hi! StatusLineNC guifg=" . s:gray . " guibg=" . s:dimBackground2 . " gui=NONE"
 
-  exe "hi! LineNr guifg=". s:gray . " guibg=NONE gui=NONE"
-  exe "hi! LineNrAbove guifg=". s:grayer . " guibg=NONE gui=NONE"
-  exe "hi! LineNrBelow guifg=". s:grayer . " guibg=NONE gui=NONE"
+  exe "hi! LineNr guifg=". s:grayer . " guibg=NONE gui=NONE"
+  exe "hi! LineNrAbove guifg=". s:gray20PercGrayer . " guibg=NONE gui=NONE"
+  exe "hi! LineNrBelow guifg=". s:gray20PercGrayer . " guibg=NONE gui=NONE"
 
   exe "hi! Folded guifg=" . s:grayer . " guibg=" . s:folded . " gui=NONE"
   exe "hi! Search guifg=NONE " . " guibg=" . s:yellow . " gui=NONE"
@@ -70,6 +71,7 @@ if &background ==# 'dark'
   exe "hi! Exception guifg=" . s:red . " guibg=NONE gui=NONE"
   exe "hi! Visual guifg=" . s:dimBackground . " guibg=" . s:grayer . " gui=NONE"
   exe "hi! MatchParen guifg=NONE guibg=" . s:yellow . " gui=bold"
+  exe "hi! NonText guifg=" . s:gray20PercGrayer . " guibg=NONE gui=NONE"
 
   " -- diff
   let s:diffGreen = '#255028'
