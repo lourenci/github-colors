@@ -15,39 +15,29 @@ GitHub uses tree-sitter to parse the source code and to colorize them. This is t
 - tree-sitter syntax
 - True color only
 
-## Tested languages
-
-- Go
-- Yaml
-- JSON
-
 ## Setup
 
 How we need to leverage tree-sitter so we can't support `vim` or `nvim 0.4`, though you can try it since we use the "tree-sitter <> vim" bindings highlights when is possible. I don't have any plans to try to port it for the mentioned ones.
 
-```viml
-
-" for nvim 0.5
-Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate', 'branch': '0.5-compat' }
-" for nvim 0.6
-Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate' }
-Plug 'lourenci/github-colors', { 'branch': 'main' }
-
-"
-" if you are using vim-plug, make sure below config is after
-" "call plug#end()" - https://github.com/nvim-treesitter/nvim-treesitter/issues/914
-"
-
-lua <<EOF
-require'nvim-treesitter.configs'.setup {
-  highlight = {
-    enable = true,
-  }
+```lua
+use {
+  'nvim-treesitter/nvim-treesitter',
+  run = ':TSUpdate',
+  config = function()
+    require'nvim-treesitter.configs'.setup {
+      highlight = {
+        enable = true,
+      }
+    }
+  end,
 }
-EOF
+use 'lourenci/github-colors'
+```
 
-set background=dark
-" or set background=light
+```vim
+syntax on
+set termguicolors
+set background=light " or set background=dark
 colorscheme github-colors
 ```
 
