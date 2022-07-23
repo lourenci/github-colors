@@ -141,8 +141,8 @@ else
   exe "hi! TSPunctDelimiter guifg="      . s:almostBlack . " guibg=NONE gui=NONE"
   exe "hi! TSParameter guifg=". s:almostBlack . " guibg=NONE gui=NONE"
   exe "hi! Normal guifg=" . s:almostBlack . " guibg=" . s:lightBackground . " gui=NONE"
-  exe "hi! TSConstructor guifg=". s:brown . " guibg=NONE gui=NONE"
-  exe "hi! TSFunction guifg=". s:brown . " guibg=NONE gui=NONE"
+  exe "hi! TSConstructor guifg=". s:almostBlack . " guibg=NONE gui=NONE"
+  exe "hi! TSFunction guifg=". s:purple . " guibg=NONE gui=NONE"
   exe "hi! Type guifg=". s:almostBlack . " guibg=NONE gui=NONE"
   exe "hi! TSTypeBuiltin guifg=". s:almostBlack . " guibg=NONE gui=NONE"
   exe "hi! Operator guifg=". s:blue . " guibg=NONE gui=NONE"
@@ -218,6 +218,10 @@ else
 
   " yaml
   exe "hi! yamlTSField guifg=". s:green . " guibg=NONE gui=NONE"
+
+  " lua
+  exe "hi! luaTSField guifg=". s:almostBlack . " guibg=NONE gui=NONE"
+  exe "hi! luaTSOperator guifg=". s:red . " guibg=NONE gui=NONE"
 endif
 
 exe "hi! VertSplit guifg=NONE guibg=NONE gui=NONE"
