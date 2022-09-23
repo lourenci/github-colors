@@ -73,6 +73,8 @@ if &background ==# 'dark'
   exe "hi! MatchParen guifg=NONE guibg=" . s:yellow . " gui=bold"
   exe "hi! NonText guifg=" . s:gray20PercGrayer . " guibg=NONE gui=NONE"
 
+  exe "hi! ColorColumn guifg=". s:gray20PercGrayer . " guibg=NONE gui=NONE"
+
   " -- diff
   let s:diffGreen = '#255028'
   let s:diffRed = '#792421'
