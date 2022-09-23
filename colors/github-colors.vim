@@ -177,6 +177,7 @@ else
   exe "hi! TabLine guifg=" . s:gray . " guibg=" . s:lightBackground2 . " gui=NONE"
   exe "hi! TabLineFill guifg=NONE " . " guibg=" . s:lightBackground . " gui=NONE"
   exe "hi! TabLineSel guifg=" . s:almostBlack . " guibg=" . s:lightBackground . " gui=NONE"
+  exe "hi! Title guifg=" . s:almostBlack . " guibg=NONE gui=bold"
   exe "hi! Constant guifg="      . s:almostBlack . " guibg=NONE gui=NONE"
   exe "hi! Repeat guifg=" . s:red . " guibg=NONE gui=NONE"
   exe "hi! Exception guifg=" . s:red . " guibg=NONE gui=NONE"
