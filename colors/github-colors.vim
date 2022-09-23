@@ -73,8 +73,6 @@ if &background ==# 'dark'
   exe "hi! MatchParen guifg=NONE guibg=" . s:yellow . " gui=bold"
   exe "hi! NonText guifg=" . s:gray20PercGrayer . " guibg=NONE gui=NONE"
 
-  exe "hi! ColorColumn guifg=". s:gray20PercGrayer . " guibg=NONE gui=NONE"
-
   " -- diff
   let s:diffGreen = '#255028'
   let s:diffRed = '#792421'
@@ -154,6 +152,8 @@ else
   exe "hi! LineNr guifg=". s:gray . " guibg=NONE gui=NONE"
   exe "hi! LineNrAbove guifg=". s:folded10PercGrayer . " guibg=NONE gui=NONE"
   exe "hi! LineNrBelow guifg=". s:folded10PercGrayer . " guibg=NONE gui=NONE"
+
+  exe "hi! ColorColumn guifg=NONE guibg=". s:lightBackground2 . "  gui=NONE"
 
   exe "hi! CursorLine guifg=NONE guibg=". s:lightBackground2 . "  gui=NONE"
   exe "hi! Folded guifg=" . s:gray . " guibg=" . s:folded . " gui=NONE"
