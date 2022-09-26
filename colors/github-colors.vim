@@ -48,6 +48,8 @@ if &background ==# 'dark'
   exe "hi! LineNrAbove guifg=". s:gray20PercGrayer . " guibg=NONE gui=NONE"
   exe "hi! LineNrBelow guifg=". s:gray20PercGrayer . " guibg=NONE gui=NONE"
 
+  exe "hi! ColorColumn guifg=NONE guibg=". s:dimBackground2 . "  gui=NONE"
+
   exe "hi! Folded guifg=" . s:grayer . " guibg=" . s:folded . " gui=NONE"
   exe "hi! Search guifg=NONE " . " guibg=" . s:yellow . " gui=NONE"
   exe "hi! Pmenu guifg=" . s:gray . " guibg=" . s:dimBackground2 . " gui=NONE"
