@@ -16,7 +16,6 @@ if &background ==# 'dark'
   let s:purple = '#dcbdfb'
   let s:yellow = '#705216'
   let s:orange = '#f69d50'
-  let s:folded = '#20262E' " 5% darker than dimBackground2
   let s:gray20PercGrayer = '#45525E'
 
   exe "hi! TSProperty guifg="      . s:blue . " guibg=NONE gui=NONE"
@@ -50,7 +49,7 @@ if &background ==# 'dark'
 
   exe "hi! ColorColumn guifg=NONE guibg=". s:dimBackground2 . "  gui=NONE"
 
-  exe "hi! Folded guifg=" . s:grayer . " guibg=" . s:folded . " gui=NONE"
+  exe "hi! Folded guifg=" . s:grayer . " guibg=" . s:dimBackground2 . " gui=NONE"
   exe "hi! Search guifg=NONE " . " guibg=" . s:yellow . " gui=NONE"
   exe "hi! Pmenu guifg=" . s:gray . " guibg=" . s:dimBackground2 . " gui=NONE"
   exe "hi! PmenuSel guifg=" . s:dimBackground2 . " guibg=" . s:gray . " gui=NONE"
