@@ -43,12 +43,14 @@ if &background ==# 'dark'
   exe "hi! StatusLine guifg=" . s:dimBackground2 . " guibg=" . s:grayer . " gui=NONE"
   exe "hi! StatusLineNC guifg=" . s:gray . " guibg=" . s:dimBackground2 . " gui=NONE"
 
+  exe "hi! CursorLineNr guifg=". s:grayer . " guibg=NONE gui=NONE"
   exe "hi! LineNr guifg=". s:grayer . " guibg=NONE gui=NONE"
   exe "hi! LineNrAbove guifg=". s:gray20PercGrayer . " guibg=NONE gui=NONE"
   exe "hi! LineNrBelow guifg=". s:gray20PercGrayer . " guibg=NONE gui=NONE"
 
   exe "hi! ColorColumn guifg=NONE guibg=". s:dimBackground2 . "  gui=NONE"
 
+  exe "hi! CursorLine guifg=NONE guibg=". s:dimBackground2 . "  gui=NONE"
   exe "hi! Folded guifg=" . s:grayer . " guibg=" . s:dimBackground2 . " gui=NONE"
   exe "hi! Search guifg=NONE " . " guibg=" . s:yellow . " gui=NONE"
   exe "hi! Pmenu guifg=" . s:gray . " guibg=" . s:dimBackground2 . " gui=NONE"
@@ -151,6 +153,7 @@ else
   exe "hi! StatusLineNC guifg=" . s:almostBlack . " guibg=" . s:lightBackground2 . " gui=NONE"
 
   exe "hi! LineNr guifg=". s:gray . " guibg=NONE gui=NONE"
+  exe "hi! CursorLineNr guifg=". s:gray . " guibg=NONE gui=NONE"
   exe "hi! LineNrAbove guifg=". s:folded10PercGrayer . " guibg=NONE gui=NONE"
   exe "hi! LineNrBelow guifg=". s:folded10PercGrayer . " guibg=NONE gui=NONE"
 
