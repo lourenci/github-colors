@@ -28,6 +28,7 @@ if &background ==# 'dark'
   exe "hi! TSConstBuiltin guifg="      . s:blue . " guibg=NONE gui=NONE"
   exe "hi! TSTag guifg="      . s:green . " guibg=NONE gui=NONE"
   exe "hi! TSTagDelimiter guifg="      . s:blue . " guibg=NONE gui=NONE"
+  exe "hi! TSLabel guifg="      . s:green . " guibg=NONE gui=NONE"
   exe "hi! TSPunctBracket guifg="      . s:gray . " guibg=NONE gui=NONE"
   exe "hi! Function guifg="      . s:purple . " guibg=NONE gui=NONE"
   exe "hi! TSMethod guifg="      . s:purple . " guibg=NONE gui=NONE"
@@ -60,7 +61,7 @@ if &background ==# 'dark'
   exe "hi! TSSymbol guifg=". s:cyan . " guibg=NONE gui=NONE"
   exe "hi! TSFloat guifg=". s:blue . " guibg=NONE gui=NONE"
   exe "hi! Label guifg=". s:blue . " guibg=NONE gui=NONE"
-  exe "hi! TSField guifg=". s:green . " guibg=NONE gui=NONE"
+  exe "hi! TSField guifg=". s:blue . " guibg=NONE gui=NONE"
   exe "hi! TSNamespace guifg=". s:gray . " guibg=NONE gui=NONE"
   exe "hi! TSVariableBuiltin guifg=" . s:gray . " guibg=NONE gui=NONE"
   exe "hi! Conditional guifg="      . s:red . " guibg=NONE gui=NONE"
@@ -104,6 +105,9 @@ if &background ==# 'dark'
   exe "hi! TSLiteral guifg=#6cb6ff guibg=NONE gui=NONE"
   exe "hi! markdownTSPunctDelimiter guifg=#6cb6ff guibg=NONE gui=NONE"
   exe "hi! markdownTSPunctSpecial guifg=#f69d50 guibg=NONE gui=NONE"
+  "
+  " yaml
+  exe "hi! yamlTSField guifg=". s:green . " guibg=NONE gui=NONE"
 
   " gitcommit
   exe "hi! Statement guifg=#316dca guibg=NONE gui=bold"
