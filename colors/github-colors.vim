@@ -101,7 +101,8 @@ if &background ==# 'dark'
   exe "hi! DiagnosticError  guifg=". s:diffRed . " guibg=NONE gui=NONE"
 
   " markdown
-  exe "hi! TSTitle guifg=#316dca guibg=NONE gui=bold"
+  exe "hi! markdownTSPunctSpecial guifg=" . s:gray . " guibg=NONE gui=bold"
+  exe "hi! TSTitle guifg=" . s:gray . " guibg=NONE gui=bold"
   exe "hi! TSLiteral guifg=#6cb6ff guibg=NONE gui=NONE"
   exe "hi! markdownTSPunctDelimiter guifg=#6cb6ff guibg=NONE gui=NONE"
   exe "hi! markdownTSPunctSpecial guifg=#f69d50 guibg=NONE gui=NONE"
