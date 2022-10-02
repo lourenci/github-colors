@@ -154,8 +154,8 @@ else
   exe "hi! TSTypeBuiltin guifg=". s:almostBlack . " guibg=NONE gui=NONE"
   exe "hi! Operator guifg=". s:blue . " guibg=NONE gui=NONE"
   exe "hi! TSBoolean guifg=". s:blue . " guibg=NONE gui=NONE"
-  exe "hi! StatusLine guifg=" . s:lightBackground2 . " guibg=" . s:gray . " gui=NONE"
-  exe "hi! StatusLineNC guifg=" . s:almostBlack . " guibg=" . s:lightBackground2 . " gui=NONE"
+  exe "hi! StatusLine guifg=" . s:lightBackground2 . " guibg=" . s:gray . " gui=bold"
+  exe "hi! StatusLineNC guifg=" . s:almostBlack . " guibg=" . s:lightBackground2 . " gui=bold"
 
   exe "hi! LineNr guifg=". s:gray . " guibg=NONE gui=NONE"
   exe "hi! CursorLineNr guifg=". s:gray . " guibg=NONE gui=NONE"
