@@ -101,11 +101,8 @@ if &background ==# 'dark'
   exe "hi! DiagnosticError  guifg=". s:diffRed . " guibg=NONE gui=NONE"
 
   " markdown
-  exe "hi! markdownTSPunctSpecial guifg=" . s:gray . " guibg=NONE gui=bold"
-  exe "hi! TSTitle guifg=" . s:gray . " guibg=NONE gui=bold"
+  exe "hi! @text.title.markdown guifg=" . s:gray . " guibg=NONE gui=bold"
   exe "hi! TSLiteral guifg=#6cb6ff guibg=NONE gui=NONE"
-  exe "hi! markdownTSPunctDelimiter guifg=#6cb6ff guibg=NONE gui=NONE"
-  exe "hi! markdownTSPunctSpecial guifg=#f69d50 guibg=NONE gui=NONE"
   "
   " yaml
   exe "hi! yamlTSField guifg=". s:green . " guibg=NONE gui=NONE"
@@ -216,13 +213,7 @@ else
   exe "hi! DiagnosticError  guifg=". s:red . " guibg=NONE gui=NONE"
 
   " markdown
-  exe "hi! markdownTSPunctSpecial guifg=#0550ae guibg=NONE gui=bold"
-  exe "hi! TSTitle guifg=#0550ae guibg=NONE gui=bold"
-  exe "hi! TSLiteral guifg=#0550ae guibg=NONE gui=NONE"
-  exe "hi! markdownTSPunctDelimiter guifg=#0550ae guibg=NONE gui=NONE"
-  exe "hi! markdownTSNone guifg=#0550ae guibg=NONE gui=NONE"
-  exe "hi! markdownTSURI guifg=". s:almostBlack . " guibg=NONE gui=NONE"
-  exe "hi! TSTextReference guifg=#8250df guibg=NONE gui=NONE"
+  exe "hi! @text.title.markdown guifg=". s:almostBlack . " guibg=NONE gui=bold"
 
   " gitcommit
   exe "hi! Statement guifg=#0550ae guibg=NONE gui=bold"
@@ -236,6 +227,7 @@ else
   exe "hi! luaTSFunction guifg=". s:blue . " guibg=NONE gui=NONE"
 endif
 
+exe "hi! link @punctuation.special.markdown @text.title.markdown"
 exe "hi! VertSplit guifg=NONE guibg=NONE gui=NONE"
 exe "hi! EndOfBuffer guifg=NONE guibg=NONE gui=NONE"
 exe "hi! TSEmphasis guifg=NONE guibg=NONE gui=italic"
