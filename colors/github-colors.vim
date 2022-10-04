@@ -102,13 +102,9 @@ if &background ==# 'dark'
 
   " markdown
   exe "hi! @text.title.markdown guifg=" . s:gray . " guibg=NONE gui=bold"
-  exe "hi! TSLiteral guifg=#6cb6ff guibg=NONE gui=NONE"
-  "
+
   " yaml
   exe "hi! @field.yaml guifg=". s:green . " guibg=NONE gui=NONE"
-
-  " gitcommit
-  exe "hi! Statement guifg=#316dca guibg=NONE gui=bold"
 else
   let s:lightBackground = '#ffffff'
   let s:lightBackground2 = '#f6f8fa'
@@ -215,9 +211,6 @@ else
   " markdown
   exe "hi! @text.title.markdown guifg=". s:almostBlack . " guibg=NONE gui=bold"
 
-  " gitcommit
-  exe "hi! Statement guifg=#0550ae guibg=NONE gui=bold"
-
   " yaml
   exe "hi! @field.yaml guifg=". s:green . " guibg=NONE gui=NONE"
 
@@ -228,6 +221,7 @@ else
 endif
 
 exe "hi! link @punctuation.special.markdown @text.title.markdown"
+exe "hi! link Statement @text.title.markdown"
 exe "hi! VertSplit guifg=NONE guibg=NONE gui=NONE"
 exe "hi! EndOfBuffer guifg=NONE guibg=NONE gui=NONE"
 exe "hi! TSEmphasis guifg=NONE guibg=NONE gui=italic"
