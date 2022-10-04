@@ -108,7 +108,7 @@ if &background ==# 'dark'
   exe "hi! markdownTSPunctSpecial guifg=#f69d50 guibg=NONE gui=NONE"
   "
   " yaml
-  exe "hi! yamlTSField guifg=". s:green . " guibg=NONE gui=NONE"
+  exe "hi! @field.yaml guifg=". s:green . " guibg=NONE gui=NONE"
 
   " gitcommit
   exe "hi! Statement guifg=#316dca guibg=NONE gui=bold"
@@ -228,7 +228,7 @@ else
   exe "hi! Statement guifg=#0550ae guibg=NONE gui=bold"
 
   " yaml
-  exe "hi! yamlTSField guifg=". s:green . " guibg=NONE gui=NONE"
+  exe "hi! @field.yaml guifg=". s:green . " guibg=NONE gui=NONE"
 
   " lua
   exe "hi! luaTSField guifg=". s:almostBlack . " guibg=NONE gui=NONE"
