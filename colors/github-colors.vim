@@ -215,9 +215,10 @@ else
   exe "hi! @field.yaml guifg=". s:green . " guibg=NONE gui=NONE"
 
   " lua
-  exe "hi! luaTSField guifg=". s:almostBlack . " guibg=NONE gui=NONE"
-  exe "hi! luaTSOperator guifg=". s:red . " guibg=NONE gui=NONE"
-  exe "hi! luaTSFunction guifg=". s:blue . " guibg=NONE gui=NONE"
+  exe "hi! @operator.lua guifg=". s:red . " guibg=NONE gui=NONE"
+  exe "hi! @field.lua guifg=". s:almostBlack . " guibg=NONE gui=NONE"
+  exe "hi! @function.call.lua guifg=". s:blue . " guibg=NONE gui=NONE"
+  exe "hi! link @function.builtin.lua @function.call.lua"
 endif
 
 exe "hi! link @punctuation.special.markdown @text.title.markdown"
