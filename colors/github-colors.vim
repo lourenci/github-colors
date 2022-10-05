@@ -105,6 +105,12 @@ if &background ==# 'dark'
 
   " yaml
   exe "hi! @field.yaml guifg=". s:green . " guibg=NONE gui=NONE"
+
+  " lua
+  exe "hi! @operator.lua guifg=". s:red . " guibg=NONE gui=NONE"
+  exe "hi! @field.lua guifg=". s:gray . " guibg=NONE gui=NONE"
+  exe "hi! @function.call.lua guifg=". s:blue . " guibg=NONE gui=NONE"
+  exe "hi! link @function.builtin.lua @function.call.lua"
 else
   let s:lightBackground = '#ffffff'
   let s:lightBackground2 = '#f6f8fa'
