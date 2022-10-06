@@ -25,6 +25,7 @@ if &background ==# 'dark'
   exe "hi! TSInclude guifg="      . s:red . " guibg=NONE gui=NONE"
   exe "hi! TSVariable guifg="      . s:gray . " guibg=NONE gui=NONE"
   exe "hi! TSKeywordFunction guifg="      . s:red . " guibg=NONE gui=NONE"
+  exe "hi! TSKeywordOperator guifg="      . s:red . " guibg=NONE gui=NONE"
   exe "hi! TSConstBuiltin guifg="      . s:blue . " guibg=NONE gui=NONE"
   exe "hi! TSTag guifg="      . s:green . " guibg=NONE gui=NONE"
   exe "hi! TSTagDelimiter guifg="      . s:blue . " guibg=NONE gui=NONE"
@@ -96,6 +97,9 @@ if &background ==# 'dark'
 
   " lsp"
   exe "hi! DiagnosticError  guifg=". s:diffRed . " guibg=NONE gui=NONE"
+  "
+  " javascript
+  exe "hi! @constructor.javascript  guifg=". s:orange . " guibg=NONE gui=NONE"
 
   " markdown
   exe "hi! @text.title.markdown guifg=" . s:gray . " guibg=NONE gui=bold"
@@ -207,6 +211,9 @@ else
 
   " lsp
   exe "hi! DiagnosticError  guifg=". s:red . " guibg=NONE gui=NONE"
+
+  " javascript
+  exe "hi! @constructor.javascript  guifg=". s:brown . " guibg=NONE gui=NONE"
 
   " markdown
   exe "hi! @text.title.markdown guifg=". s:almostBlack . " guibg=NONE gui=bold"
