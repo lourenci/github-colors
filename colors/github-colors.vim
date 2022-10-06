@@ -91,10 +91,6 @@ if &background ==# 'dark'
   " -- netwr
   exe "hi! Directory guifg=" . s:cyan . " guibg=NONE gui=NONE"
 
-  " -- Ruby
-  exe "hi! rubyTSInclude guifg=". s:purple . " guibg=NONE gui=NONE"
-  exe "hi! rubyTSType guifg=". s:orange . " guibg=NONE gui=NONE"
-
   " lsp"
   exe "hi! DiagnosticError  guifg=". s:diffRed . " guibg=NONE gui=NONE"
   "
@@ -204,10 +200,6 @@ else
 
   " -- netwr
   exe "hi! Directory guifg=" . s:hardBlue . " guibg=NONE gui=NONE"
-
-  " -- Ruby
-  exe "hi! rubyTSInclude guifg=". s:purple . " guibg=NONE gui=NONE"
-  exe "hi! rubyTSType guifg=". s:orange . " guibg=NONE gui=NONE"
 
   " lsp
   exe "hi! DiagnosticError  guifg=". s:red . " guibg=NONE gui=NONE"
