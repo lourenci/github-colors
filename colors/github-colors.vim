@@ -94,9 +94,6 @@ if &background ==# 'dark'
   exe "hi! rubyTSInclude guifg=". s:purple . " guibg=NONE gui=NONE"
   exe "hi! rubyTSType guifg=". s:orange . " guibg=NONE gui=NONE"
 
-  " -- Javascript
-  exe "hi! javascriptTSConstructor guifg=". s:orange . " guibg=NONE gui=NONE"
-
   " lsp"
   exe "hi! DiagnosticError  guifg=". s:diffRed . " guibg=NONE gui=NONE"
 
@@ -207,9 +204,6 @@ else
   " -- Ruby
   exe "hi! rubyTSInclude guifg=". s:purple . " guibg=NONE gui=NONE"
   exe "hi! rubyTSType guifg=". s:orange . " guibg=NONE gui=NONE"
-
-  " -- Javascript
-  exe "hi! javascriptTSType guifg=". s:orange . " guibg=NONE gui=NONE"
 
   " lsp
   exe "hi! DiagnosticError  guifg=". s:red . " guibg=NONE gui=NONE"
