@@ -222,6 +222,7 @@ endif
 
 exe "hi! link @punctuation.special.markdown @text.title.markdown"
 exe "hi! link Statement @text.title.markdown"
+exe "hi! link FoldColumn SignColumn"
 exe "hi! VertSplit guifg=NONE guibg=NONE gui=NONE"
 exe "hi! EndOfBuffer guifg=NONE guibg=NONE gui=NONE"
 exe "hi! TSEmphasis guifg=NONE guibg=NONE gui=italic"
