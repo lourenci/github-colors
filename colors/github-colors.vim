@@ -225,7 +225,7 @@ exe "hi! VertSplit guifg=NONE guibg=NONE gui=NONE"
 exe "hi! EndOfBuffer guifg=NONE guibg=NONE gui=NONE"
 exe "hi! @text.emphasis guifg=NONE guibg=NONE gui=italic"
 exe "hi! @text.strong guifg=NONE guibg=NONE gui=bold"
-exe "hi! EyelinerPrimary gui=bold,underline"
+exe "hi! EyelinerPrimary gui=bold,underline,italic"
 exe "hi! EyelinerSecondary gui=bold"
 
 exe "hi! link QuickScopePrimary EyelinerPrimary"
