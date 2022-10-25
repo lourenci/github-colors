@@ -109,8 +109,6 @@ if &background ==# 'dark'
   exe "hi! @function.call.lua guifg=". s:blue . " guibg=NONE gui=NONE"
   exe "hi! link @function.builtin.lua @function.call.lua"
 
-  exe "hi! EyelinerPrimary guifg=". s:red . " guibg=NONE gui=bold,underline"
-  exe "hi! EyelinerSecondary guifg=". s:gray . " guibg=NONE gui=bold,underline"
 else
   let s:lightBackground = '#ffffff'
   let s:lightBackground2 = '#f6f8fa'
@@ -218,9 +216,6 @@ else
   exe "hi! @field.lua guifg=". s:almostBlack . " guibg=NONE gui=NONE"
   exe "hi! @function.call.lua guifg=". s:blue . " guibg=NONE gui=NONE"
   exe "hi! link @function.builtin.lua @function.call.lua"
-
-  exe "hi! EyelinerPrimary guifg=". s:red . " guibg=NONE gui=bold,underline"
-  exe "hi! EyelinerSecondary guifg=". s:almostBlack . " guibg=NONE gui=bold,underline"
 endif
 
 exe "hi! link @punctuation.special.markdown @text.title.markdown"
@@ -230,6 +225,8 @@ exe "hi! VertSplit guifg=NONE guibg=NONE gui=NONE"
 exe "hi! EndOfBuffer guifg=NONE guibg=NONE gui=NONE"
 exe "hi! @text.emphasis guifg=NONE guibg=NONE gui=italic"
 exe "hi! @text.strong guifg=NONE guibg=NONE gui=bold"
+exe "hi! EyelinerPrimary gui=bold,underline"
+exe "hi! EyelinerSecondary gui=bold"
 
 exe "hi! link QuickScopePrimary EyelinerPrimary"
 exe "hi! link QuickScopeSecondary EyelinerSecondary"
