@@ -230,3 +230,6 @@ exe "hi! VertSplit guifg=NONE guibg=NONE gui=NONE"
 exe "hi! EndOfBuffer guifg=NONE guibg=NONE gui=NONE"
 exe "hi! @text.emphasis guifg=NONE guibg=NONE gui=italic"
 exe "hi! @text.strong guifg=NONE guibg=NONE gui=bold"
+
+exe "hi! link QuickScopePrimary EyelinerPrimary"
+exe "hi! link QuickScopeSecondary EyelinerSecondary"
