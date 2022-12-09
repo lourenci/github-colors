@@ -110,6 +110,7 @@ if &background ==# 'dark'
   exe "hi! @function.call.lua guifg=". s:blue . " guibg=NONE gui=NONE"
   exe "hi! link @function.builtin.lua @function.call.lua"
 
+  exe "hi! NoiceCmdlinePopupBorder  guifg=" . s:gray . " guibg=NONE gui=NONE"
 else
   let s:lightBackground = '#ffffff'
   let s:lightBackground2 = '#f6f8fa'
@@ -218,6 +219,8 @@ else
   exe "hi! @field.lua guifg=". s:almostBlack . " guibg=NONE gui=NONE"
   exe "hi! @function.call.lua guifg=". s:blue . " guibg=NONE gui=NONE"
   exe "hi! link @function.builtin.lua @function.call.lua"
+
+  exe "hi! NoiceCmdlinePopupBorder  guifg=" . s:almostBlack . " guibg=NONE gui=NONE"
 endif
 
 exe "hi! link @punctuation.special.markdown @text.title.markdown"
@@ -234,3 +237,6 @@ exe "hi! EyelinerPrimary gui=bold"
 exe "hi! EyelinerSecondary gui=italic"
 exe "hi! link QuickScopePrimary EyelinerPrimary"
 exe "hi! link QuickScopeSecondary EyelinerSecondary"
+exe "hi! link NoiceCmdlinePopupBorderSearch NoiceCmdlinePopupBorder"
+exe "hi! link NoiceCmdlineIcon NoiceCmdlinePopupBorder"
+exe "hi! link NoiceCmdlineIconSearch NoiceCmdlinePopupBorder"
