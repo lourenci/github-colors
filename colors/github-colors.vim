@@ -38,6 +38,7 @@ if &background ==# 'dark'
   exe "hi! @parameter guifg=". s:gray . " guibg=NONE gui=NONE"
   exe "hi! Normal guifg=" . s:gray . " guibg=" . s:dimBackground . " gui=NONE"
   exe "hi! @constructor guifg=". s:gray . " guibg=NONE gui=NONE"
+  exe "hi! Type guifg=". s:gray . " guibg=NONE gui=NONE"
   exe "hi! @type guifg=". s:gray . " guibg=NONE gui=NONE"
   exe "hi! @type.builtin guifg=". s:gray . " guibg=NONE gui=NONE"
   exe "hi! @type.definition guifg=". s:gray . " guibg=NONE gui=NONE"
@@ -110,6 +111,9 @@ if &background ==# 'dark'
   exe "hi! @function.call.lua guifg=". s:blue . " guibg=NONE gui=NONE"
   exe "hi! link @function.builtin.lua @function.call.lua"
 
+  " dockerfile
+  exe "hi! @property.dockerfile guifg=". s:gray . " guibg=NONE gui=NONE"
+
   exe "hi! NoiceCmdlinePopupBorder  guifg=" . s:gray . " guibg=NONE gui=NONE"
 else
   let s:lightBackground = '#ffffff'
@@ -147,6 +151,7 @@ else
   exe "hi! @parameter guifg=". s:almostBlack . " guibg=NONE gui=NONE"
   exe "hi! Normal guifg=" . s:almostBlack . " guibg=" . s:lightBackground . " gui=NONE"
   exe "hi! @constructor guifg=". s:almostBlack . " guibg=NONE gui=NONE"
+  exe "hi! Type guifg=". s:almostBlack . " guibg=NONE gui=NONE"
   exe "hi! @type guifg=". s:almostBlack . " guibg=NONE gui=NONE"
   exe "hi! @type.builtin guifg=". s:almostBlack . " guibg=NONE gui=NONE"
   exe "hi! @type.definition guifg=". s:almostBlack . " guibg=NONE gui=NONE"
@@ -219,6 +224,9 @@ else
   exe "hi! @field.lua guifg=". s:almostBlack . " guibg=NONE gui=NONE"
   exe "hi! @function.call.lua guifg=". s:blue . " guibg=NONE gui=NONE"
   exe "hi! link @function.builtin.lua @function.call.lua"
+
+  " dockerfile
+  exe "hi! @property.dockerfile guifg=". s:almostBlack . " guibg=NONE gui=NONE"
 
   exe "hi! NoiceCmdlinePopupBorder  guifg=" . s:almostBlack . " guibg=NONE gui=NONE"
 endif
