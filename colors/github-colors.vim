@@ -111,9 +111,6 @@ if &background ==# 'dark'
   exe "hi! @function.call.lua guifg=". s:blue . " guibg=NONE gui=NONE"
   exe "hi! link @function.builtin.lua @function.call.lua"
 
-  " dockerfile
-  exe "hi! @property.dockerfile guifg=". s:gray . " guibg=NONE gui=NONE"
-
   exe "hi! NoiceCmdlinePopupBorder  guifg=" . s:gray . " guibg=NONE gui=NONE"
 else
   let s:lightBackground = '#ffffff'
@@ -224,9 +221,6 @@ else
   exe "hi! @field.lua guifg=". s:almostBlack . " guibg=NONE gui=NONE"
   exe "hi! @function.call.lua guifg=". s:blue . " guibg=NONE gui=NONE"
   exe "hi! link @function.builtin.lua @function.call.lua"
-
-  " dockerfile
-  exe "hi! @property.dockerfile guifg=". s:almostBlack . " guibg=NONE gui=NONE"
 
   exe "hi! NoiceCmdlinePopupBorder  guifg=" . s:almostBlack . " guibg=NONE gui=NONE"
 endif
