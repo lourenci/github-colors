@@ -230,6 +230,8 @@ exe "hi! @text.strong guifg=NONE guibg=NONE gui=bold"
 
 exe "hi! netrwMarkFile gui=bold"
 
+exe "hi! LspSignatureActiveParameter gui=bold,italic,underline"
+
 exe "hi! EyelinerPrimary gui=bold"
 exe "hi! EyelinerSecondary gui=italic"
 exe "hi! link QuickScopePrimary EyelinerPrimary"
