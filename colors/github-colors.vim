@@ -71,6 +71,7 @@ if &background ==# 'dark'
   exe "hi! TabLine guifg=" . s:grayer . " guibg=" . s:dimBackground2 . " gui=NONE"
   exe "hi! TabLineFill guifg=NONE " . " guibg=" . s:dimBackground . " gui=NONE"
   exe "hi! TabLineSel guifg=" . s:gray . " guibg=" . s:dimBackground . " gui=NONE"
+  exe "hi! Title guifg=" . s:gray . " guibg=NONE gui=bold"
   exe "hi! Constant guifg="      . s:blue . " guibg=NONE gui=NONE"
   exe "hi! @todo guifg=" . s:grayer . " guibg=NONE gui=NONE"
   exe "hi! @repeat guifg=" . s:red . " guibg=NONE gui=NONE"
@@ -98,9 +99,6 @@ if &background ==# 'dark'
   "
   " javascript
   exe "hi! @constructor.javascript  guifg=". s:orange . " guibg=NONE gui=NONE"
-
-  " markdown
-  exe "hi! @text.title.markdown guifg=" . s:gray . " guibg=NONE gui=bold"
 
   " yaml
   exe "hi! @field.yaml guifg=". s:green . " guibg=NONE gui=NONE"
@@ -209,9 +207,6 @@ else
 
   " javascript
   exe "hi! @constructor.javascript  guifg=". s:brown . " guibg=NONE gui=NONE"
-
-  " markdown
-  exe "hi! @text.title.markdown guifg=". s:almostBlack . " guibg=NONE gui=bold"
 
   " yaml
   exe "hi! @field.yaml guifg=". s:green . " guibg=NONE gui=NONE"
