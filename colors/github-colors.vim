@@ -220,22 +220,24 @@ else
   exe "hi! NoiceCmdlinePopupBorder  guifg=" . s:almostBlack . " guibg=NONE gui=NONE"
 endif
 
-exe "hi! link @punctuation.special.markdown @text.title.markdown"
-exe "hi! link Statement @text.title.markdown"
-exe "hi! link FoldColumn SignColumn"
-exe "hi! VertSplit guifg=NONE guibg=NONE gui=NONE"
-exe "hi! EndOfBuffer guifg=NONE guibg=NONE gui=NONE"
-exe "hi! @text.emphasis guifg=NONE guibg=NONE gui=italic"
-exe "hi! @text.strong guifg=NONE guibg=NONE gui=bold"
+hi! link @punctuation.special.markdown @text.title.markdown
+hi! link Statement @text.title.markdown
+hi! link FoldColumn SignColumn
+hi! link SpecialKey NonText
+hi! VertSplit guifg=NONE guibg=NONE gui=NONE
+hi! EndOfBuffer guifg=NONE guibg=NONE gui=NONE
+hi! @text.emphasis guifg=NONE guibg=NONE gui=italic
+hi! @text.strong guifg=NONE guibg=NONE gui=bold
 
-exe "hi! netrwMarkFile gui=bold"
+hi! netrwMarkFile gui=bold
 
-exe "hi! LspSignatureActiveParameter gui=bold,italic,underline"
+hi! LspSignatureActiveParameter gui=bold,italic,underline
 
-exe "hi! EyelinerPrimary gui=bold"
-exe "hi! EyelinerSecondary gui=italic"
-exe "hi! link QuickScopePrimary EyelinerPrimary"
-exe "hi! link QuickScopeSecondary EyelinerSecondary"
-exe "hi! link NoiceCmdlinePopupBorderSearch NoiceCmdlinePopupBorder"
-exe "hi! link NoiceCmdlineIcon NoiceCmdlinePopupBorder"
-exe "hi! link NoiceCmdlineIconSearch NoiceCmdlinePopupBorder"
+hi! EyelinerPrimary gui=bold
+hi! EyelinerSecondary gui=italic
+hi! link QuickScopePrimary EyelinerPrimary
+hi! link QuickScopeSecondary EyelinerSecondary
+
+hi! link NoiceCmdlinePopupBorderSearch NoiceCmdlinePopupBorder
+hi! link NoiceCmdlineIcon NoiceCmdlinePopupBorder
+hi! link NoiceCmdlineIconSearch NoiceCmdlinePopupBorder
