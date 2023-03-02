@@ -55,7 +55,6 @@ if &background ==# 'dark'
   exe "hi! ColorColumn guifg=NONE guibg=". s:dimBackground2 . "  gui=NONE"
 
   exe "hi! CursorLine guifg=NONE guibg=". s:dimBackground2 . "  gui=NONE"
-  exe "hi! Folded guifg=" . s:grayer . " guibg=" . s:dimBackground2 . " gui=NONE"
   exe "hi! Search guifg=NONE " . " guibg=" . s:yellow . " gui=NONE"
   exe "hi! Pmenu guifg=" . s:gray . " guibg=" . s:dimBackground2 . " gui=NONE"
   exe "hi! PmenuSel guifg=" . s:dimBackground2 . " guibg=" . s:gray . " gui=NONE"
@@ -123,7 +122,6 @@ else
   let s:yellow = '#fffbdd'
   let s:orange = '#e36209'
   let s:brown = '#953800'
-  let s:folded = '#F6F8FA'
   let s:folded10PercGrayer = '#DADBDD'
 
   exe "hi! @property guifg="      . s:blue . " guibg=NONE gui=NONE"
@@ -163,7 +161,6 @@ else
   exe "hi! ColorColumn guifg=NONE guibg=". s:lightBackground2 . "  gui=NONE"
 
   exe "hi! CursorLine guifg=NONE guibg=". s:lightBackground2 . "  gui=NONE"
-  exe "hi! Folded guifg=" . s:gray . " guibg=" . s:folded . " gui=NONE"
   exe "hi! Search guifg=NONE " . " guibg=" . s:yellow . " gui=NONE"
   exe "hi! Pmenu guifg=" . s:almostBlack . " guibg=" . s:lightBackground2 . " gui=NONE"
   exe "hi! PmenuSel guifg=" . s:lightBackground2 . " guibg=" . s:almostBlack . " gui=NONE"
@@ -224,6 +221,7 @@ hi! link @punctuation.special.markdown @text.title.markdown
 hi! link Statement @text.title.markdown
 hi! link FoldColumn SignColumn
 hi! link SpecialKey NonText
+hi! link Folded NonText
 hi! VertSplit guifg=NONE guibg=NONE gui=NONE
 hi! EndOfBuffer guifg=NONE guibg=NONE gui=NONE
 hi! @text.emphasis guifg=NONE guibg=NONE gui=italic
