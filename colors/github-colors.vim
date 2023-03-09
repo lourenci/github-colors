@@ -46,6 +46,7 @@ if &background ==# 'dark'
   exe "hi! @boolean guifg=". s:blue . " guibg=NONE gui=NONE"
   exe "hi! StatusLine guifg=" . s:dimBackground2 . " guibg=" . s:grayer . " gui=NONE"
   exe "hi! StatusLineNC guifg=" . s:gray . " guibg=" . s:dimBackground2 . " gui=NONE"
+  exe "hi! Identifier guifg="      . s:purple . " guibg=NONE gui=NONE"
 
   exe "hi! CursorLineNr guifg=". s:grayer . " guibg=NONE gui=NONE"
   exe "hi! LineNr guifg=". s:grayer . " guibg=NONE gui=NONE"
@@ -152,6 +153,7 @@ else
   exe "hi! @boolean guifg=". s:blue . " guibg=NONE gui=NONE"
   exe "hi! StatusLine guifg=" . s:lightBackground2 . " guibg=" . s:gray . " gui=bold"
   exe "hi! StatusLineNC guifg=" . s:almostBlack . " guibg=" . s:lightBackground2 . " gui=bold"
+  exe "hi! Identifier guifg="      . s:purple . " guibg=NONE gui=NONE"
 
   exe "hi! LineNr guifg=". s:gray . " guibg=NONE gui=NONE"
   exe "hi! CursorLineNr guifg=". s:gray . " guibg=NONE gui=NONE"
@@ -213,6 +215,9 @@ else
   exe "hi! @field.lua guifg=". s:almostBlack . " guibg=NONE gui=NONE"
   exe "hi! @function.call.lua guifg=". s:blue . " guibg=NONE gui=NONE"
   exe "hi! link @function.builtin.lua @function.call.lua"
+
+  " markdown
+  exe "hi! @text.literal.markdown_inline guifg="      . s:blue . " guibg=NONE gui=NONE"
 
   exe "hi! NoiceCmdlinePopupBorder  guifg=" . s:almostBlack . " guibg=NONE gui=NONE"
 endif
