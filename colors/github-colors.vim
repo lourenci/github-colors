@@ -233,6 +233,22 @@ hi! EndOfBuffer guifg=NONE guibg=NONE gui=NONE
 hi! @text.emphasis guifg=NONE guibg=NONE gui=italic
 hi! @text.strong guifg=NONE guibg=NONE gui=bold
 
+" Disable lsp semantic tokens
+hi! link @lsp.type.namespace @namespace
+hi! link @lsp.type.type @type
+hi! link @lsp.type.class @type
+hi! link @lsp.type.enum @type
+hi! link @lsp.type.interface @type
+hi! link @lsp.type.struct @structure
+hi! link @lsp.type.parameter @parameter
+hi! link @lsp.type.variable @variable
+hi! link @lsp.type.property @property
+hi! link @lsp.type.enumMember @constant
+hi! link @lsp.type.function @function
+hi! link @lsp.type.method @method
+hi! link @lsp.type.macro @macro
+hi! link @lsp.type.decorator @function
+
 hi! netrwMarkFile gui=bold
 
 hi! LspSignatureActiveParameter gui=bold,italic,underline
