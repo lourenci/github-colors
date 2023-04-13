@@ -227,6 +227,7 @@ hi! link Statement @text.title.markdown
 hi! link FoldColumn SignColumn
 hi! link SpecialKey NonText
 hi! link Folded NonText
+hi! link LspLens NonText
 hi! VertSplit guifg=NONE guibg=NONE gui=NONE
 hi! EndOfBuffer guifg=NONE guibg=NONE gui=NONE
 hi! @text.emphasis guifg=NONE guibg=NONE gui=italic
