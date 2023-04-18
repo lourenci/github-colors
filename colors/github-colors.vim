@@ -227,7 +227,7 @@ hi! link Statement @text.title.markdown
 hi! link FoldColumn SignColumn
 hi! link SpecialKey NonText
 hi! link Folded NonText
-hi! link LspLens NonText
+hi! TODO guifg=NONE guibg=NONE gui=bold
 hi! VertSplit guifg=NONE guibg=NONE gui=NONE
 hi! EndOfBuffer guifg=NONE guibg=NONE gui=NONE
 hi! @text.emphasis guifg=NONE guibg=NONE gui=italic
@@ -253,6 +253,7 @@ hi! netrwMarkFile gui=bold
 
 hi! LspSignatureActiveParameter gui=bold,italic,underline
 
+" Third party plugins
 hi! EyelinerPrimary gui=bold
 hi! EyelinerSecondary gui=italic
 hi! link QuickScopePrimary EyelinerPrimary
@@ -261,3 +262,5 @@ hi! link QuickScopeSecondary EyelinerSecondary
 hi! link NoiceCmdlinePopupBorderSearch NoiceCmdlinePopupBorder
 hi! link NoiceCmdlineIcon NoiceCmdlinePopupBorder
 hi! link NoiceCmdlineIconSearch NoiceCmdlinePopupBorder
+
+hi! link LspLens NonText
