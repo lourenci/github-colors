@@ -264,3 +264,5 @@ hi! link NoiceCmdlineIcon NoiceCmdlinePopupBorder
 hi! link NoiceCmdlineIconSearch NoiceCmdlinePopupBorder
 
 hi! link LspLens NonText
+
+hi! link CopilotSuggestion NonText
