@@ -110,6 +110,8 @@ if &background ==# 'dark'
   exe "hi! link @function.builtin.lua @function.call.lua"
 
   exe "hi! NoiceCmdlinePopupBorder  guifg=" . s:gray . " guibg=NONE gui=NONE"
+
+  exe "hi! OilDir  guifg=" . s:blue . " guibg=NONE gui=NONE"
 else
   let s:lightBackground = '#ffffff'
   let s:lightBackground2 = '#f6f8fa'
@@ -220,6 +222,8 @@ else
   exe "hi! @text.literal.markdown_inline guifg="      . s:blue . " guibg=NONE gui=NONE"
 
   exe "hi! NoiceCmdlinePopupBorder  guifg=" . s:almostBlack . " guibg=NONE gui=NONE"
+
+  exe "hi! OilDir  guifg=" . s:blue . " guibg=NONE gui=NONE"
 endif
 
 hi! link @punctuation.special.markdown @text.title.markdown
