@@ -264,8 +264,10 @@ hi! link QuickScopePrimary EyelinerPrimary
 hi! link QuickScopeSecondary EyelinerSecondary
 
 hi! link NoiceCmdlinePopupBorderSearch NoiceCmdlinePopupBorder
+hi! link NoiceCmdlinePopupTitle NoiceCmdlinePopupBorder
 hi! link NoiceCmdlineIcon NoiceCmdlinePopupBorder
 hi! link NoiceCmdlineIconSearch NoiceCmdlinePopupBorder
+hi! link NoiceVirtualText NonText
 
 hi! link LspLens NonText
 
