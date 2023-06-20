@@ -231,6 +231,7 @@ hi! link Statement @text.title.markdown
 hi! link FoldColumn SignColumn
 hi! link SpecialKey NonText
 hi! link Folded NonText
+hi! link NormalFloat Normal
 hi! TODO guifg=NONE guibg=NONE gui=bold
 hi! VertSplit guifg=NONE guibg=NONE gui=NONE
 hi! EndOfBuffer guifg=NONE guibg=NONE gui=NONE
