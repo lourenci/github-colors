@@ -254,6 +254,8 @@ hi! link @lsp.type.method @method
 hi! link @lsp.type.macro @macro
 hi! link @lsp.type.decorator @function
 
+hi! link @lsp.type.type.terraform @keyword
+
 hi! netrwMarkFile gui=bold
 
 hi! LspSignatureActiveParameter gui=bold,italic,underline
