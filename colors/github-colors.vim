@@ -259,6 +259,7 @@ hi! link @lsp.type.type.terraform @keyword
 hi! netrwMarkFile gui=bold
 
 hi! LspSignatureActiveParameter gui=bold,italic,underline
+hi! DiagnosticDeprecated gui=strikethrough
 
 " Third party plugins
 hi! EyelinerPrimary gui=bold
