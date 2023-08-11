@@ -106,8 +106,7 @@ if &background ==# 'dark'
   " lua
   exe "hi! @operator.lua guifg=". s:red . " guibg=NONE gui=NONE"
   exe "hi! @field.lua guifg=". s:gray . " guibg=NONE gui=NONE"
-  exe "hi! @function.call.lua guifg=". s:blue . " guibg=NONE gui=NONE"
-  exe "hi! link @function.builtin.lua @function.call.lua"
+  exe "hi! @function.call guifg=". s:blue . " guibg=NONE gui=NONE"
 
   exe "hi! NoiceCmdlinePopupBorder  guifg=" . s:gray . " guibg=NONE gui=NONE"
 
@@ -215,8 +214,7 @@ else
   " lua
   exe "hi! @operator.lua guifg=". s:red . " guibg=NONE gui=NONE"
   exe "hi! @field.lua guifg=". s:almostBlack . " guibg=NONE gui=NONE"
-  exe "hi! @function.call.lua guifg=". s:blue . " guibg=NONE gui=NONE"
-  exe "hi! link @function.builtin.lua @function.call.lua"
+  exe "hi! @function.call guifg=". s:blue . " guibg=NONE gui=NONE"
 
   " markdown
   exe "hi! @text.literal.markdown_inline guifg="      . s:blue . " guibg=NONE gui=NONE"
@@ -228,6 +226,7 @@ endif
 
 hi! link @punctuation.special.markdown @text.title.markdown
 hi! link Statement @text.title.markdown
+hi! link @function.builtin @function.call
 hi! link FoldColumn SignColumn
 hi! link SpecialKey NonText
 hi! link Folded NonText
