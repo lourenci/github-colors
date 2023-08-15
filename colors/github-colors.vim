@@ -96,6 +96,8 @@ if &background ==# 'dark'
 
   " lsp"
   exe "hi! DiagnosticError  guifg=". s:diffRed . " guibg=NONE gui=NONE"
+
+  exe "hi! DiagnosticSignHint  guifg=". s:grayer
   "
   " javascript
   exe "hi! @constructor.javascript  guifg=". s:orange . " guibg=NONE gui=NONE"
@@ -205,6 +207,8 @@ else
   " lsp
   exe "hi! DiagnosticError  guifg=". s:red . " guibg=NONE gui=NONE"
 
+  exe "hi! DiagnosticSignHint  guifg=". s:gray
+
   " javascript
   exe "hi! @constructor.javascript  guifg=". s:brown . " guibg=NONE gui=NONE"
 
@@ -259,6 +263,8 @@ hi! netrwMarkFile gui=bold
 
 hi! LspSignatureActiveParameter gui=bold,italic,underline
 hi! DiagnosticDeprecated gui=strikethrough
+
+hi! link DiagnosticFloatingHint DiagnosticSignHint
 
 " Third party plugins
 hi! EyelinerPrimary gui=bold
