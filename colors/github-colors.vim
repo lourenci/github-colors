@@ -235,6 +235,8 @@ hi! link FoldColumn SignColumn
 hi! link SpecialKey NonText
 hi! link Folded NonText
 hi! link NormalFloat Normal
+hi! link diffAdded DiffAdd
+hi! link diffRemoved DiffDelete
 hi! TODO guifg=NONE guibg=NONE gui=bold
 hi! VertSplit guifg=NONE guibg=NONE gui=NONE
 hi! EndOfBuffer guifg=NONE guibg=NONE gui=NONE
