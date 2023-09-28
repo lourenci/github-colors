@@ -237,6 +237,7 @@ hi! link Folded NonText
 hi! link NormalFloat Normal
 hi! link diffAdded DiffAdd
 hi! link diffRemoved DiffDelete
+hi! link @spell @string
 hi! TODO guifg=NONE guibg=NONE gui=bold
 hi! VertSplit guifg=NONE guibg=NONE gui=NONE
 hi! EndOfBuffer guifg=NONE guibg=NONE gui=NONE
